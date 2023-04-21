@@ -22,9 +22,9 @@ namespace Ej11
 
     public class configuracion
     {
-        int nacimiento = 15;
-        int muerte = 30;
-        int show = 5;
+        int nacimiento = 30;
+        int muerte = 60;
+        int show = 10;
 
         public int Nacimiento
         {
