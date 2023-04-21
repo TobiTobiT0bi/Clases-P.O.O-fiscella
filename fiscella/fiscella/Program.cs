@@ -22,9 +22,9 @@ namespace Ej11
 
     public class configuracion
     {
-        int nacimiento = 30;
-        int muerte = 60;
-        int show = 10;
+        int nacimiento = 15;
+        int muerte = 30;
+        int show = 5;
 
         public int Nacimiento
         {
@@ -97,13 +97,15 @@ namespace Ej11
     internal class Program
     {
 
-        static void generar(Random rand1, Random rand2, List<Persona> personas, string[] nombres, string[] apellidos)
+        static string generar(Random rand1, Random rand2, List<Persona> personas, string[] nombres, string[] apellidos)
         {
             string nombre = nombres[rand1.Next(0, nombres.Length)];
             string ape = apellidos[rand2.Next(0, apellidos.Length)];
             string email = nombre + ape + "@hotmail.com";
 
             personas.Add(new Persona(nombre, ape, rand1.Next(0, 60), email));
+            Persona index = personas.Find(p => p.NombreCompleto == (nombre + ' ' + ape));
+            return index.NombreCompleto;
         }
         static void Main(string[] args)
         {
@@ -114,16 +116,21 @@ namespace Ej11
             Random rand = new Random();
             Random randape = new Random();
             compara comparador = new compara();
-            bool color = false;
+            string msg = "";
+            string nuevo = "";
+            bool showmsg = false;
 
-            bool nace = false;
-            bool muere = false;
+            bool color = false;
+            bool inicio = false;
+
+            bool nace = true;
+            bool muere = true;
             bool refresh = false;
 
             DateTime hora = DateTime.Now;
             DateTime horaActual;
 
-            DateTime DesdeNuevo = DateTime.Now;
+            DateTime DesdeNaci = DateTime.Now;
             DateTime DesdeMuerte = DateTime.Now;
             DateTime DesdeRefresh = DateTime.Now;
 
@@ -146,18 +153,18 @@ namespace Ej11
                 horaActual = DateTime.Now;
                 TimeSpan timeSpan = horaActual - hora;
 
-                TimeSpan nuevo = horaActual - DesdeNuevo;
+                TimeSpan nacimiento = horaActual - DesdeNaci;
                 TimeSpan muerto = horaActual - DesdeMuerte;
                 TimeSpan recarga = horaActual - DesdeRefresh;
 
                 if (timeSpan.Seconds % config.Nacimiento == 0 && nace == false)
                 {
-                    generar(rand, randape, personas, nombres, apellidos);
+                    nuevo = generar(rand, randape, personas, nombres, apellidos);
                     nace = true;
                     color = true;
-                    DesdeNuevo = DateTime.Now;
+                    DesdeNaci = DateTime.Now;
                 }
-                if (nuevo.Seconds == 1)
+                if (nacimiento.Seconds == 1)
                 {
                     nace = false;
                 }
@@ -165,7 +172,10 @@ namespace Ej11
 
                 if (timeSpan.Seconds % config.Muerte == 0 && muere == false)
                 {
-                    personas.RemoveAt(rand.Next(0, personas.Count));
+                    int randi = rand.Next(0, personas.Count);
+                    msg = "\n usuario eliminado: " + personas[randi].mostrar();
+                    showmsg = true;
+                    personas.RemoveAt(randi);
                     muere = true;
                     DesdeMuerte = DateTime.Now;
                 }
@@ -177,19 +187,23 @@ namespace Ej11
                 if (timeSpan.Seconds % config.Mostrar == 0 && refresh == false)
                 {
                     Console.Clear();
+                    personas.Sort(comparador);
                     if (color == true)
                     {
                         for (int i = 0; i < personas.Count; i++)
                         {
-                            if (i == personas.Count)
+                            if (i == personas.FindIndex(p => p.NombreCompleto == nuevo) && inicio == true)
                             {
-                                Console.BackgroundColor = ConsoleColor.Green;
+                                Console.BackgroundColor = ConsoleColor.Green; Console.ForegroundColor = ConsoleColor.Black;
                                 Console.WriteLine(personas[i].mostrar());
                                 Console.ResetColor();
                             }
-                            Console.WriteLine(personas[i].mostrar());
+                            else {
+                                Console.WriteLine(personas[i].mostrar());
+                            }                           
                         }
                         color = false;
+                        inicio = true;
                     }
                     else
                     {
@@ -197,9 +211,18 @@ namespace Ej11
                         {
                             Console.WriteLine(p.mostrar());
                         }
+                        inicio = true;
                     }
 
                     Console.WriteLine("\n cantidad de habitantes de argentina: " + personas.Count);
+
+                    if (showmsg == true) {
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.Write(msg);
+                        Console.ResetColor();
+                        showmsg = false;
+                    }                
+
                     refresh = true;
                     DesdeRefresh = DateTime.Now;
                 }
@@ -207,8 +230,6 @@ namespace Ej11
                 {
                     refresh = false;
                 }
-
-                personas.Sort(comparador);
             }
         }
     }
