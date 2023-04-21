@@ -54,7 +54,8 @@ namespace Ej11
         string nombre;
         string apellido;
         int edad;
-        public string email;
+        string email;
+
 
         public string NombreCompleto
         {
