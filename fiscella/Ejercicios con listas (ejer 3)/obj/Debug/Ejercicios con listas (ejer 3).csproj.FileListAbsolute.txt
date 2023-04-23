@@ -6,3 +6,11 @@ C:\Users\Alumno\Documents\Tobias Coman 5to 10ma\Clases-P.O.O-fiscella\fiscella\E
 C:\Users\Alumno\Documents\Tobias Coman 5to 10ma\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\obj\Debug\Ejercicios con listas (ejer 3).csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Documents\Tobias Coman 5to 10ma\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\obj\Debug\Ejercicios con listas (ejer 3).exe
 C:\Users\Alumno\Documents\Tobias Coman 5to 10ma\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\obj\Debug\Ejercicios con listas (ejer 3).pdb
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\bin\Debug\Ejercicios con listas (ejer 3).exe.config
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\bin\Debug\Ejercicios con listas (ejer 3).exe
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\bin\Debug\Ejercicios con listas (ejer 3).pdb
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\obj\Debug\Ejercicios con listas (ejer 3).csproj.AssemblyReference.cache
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\obj\Debug\Ejercicios con listas (ejer 3).csproj.SuggestedBindingRedirects.cache
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\obj\Debug\Ejercicios con listas (ejer 3).csproj.CoreCompileInputs.cache
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\obj\Debug\Ejercicios con listas (ejer 3).exe
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\Ejercicios con listas (ejer 3)\obj\Debug\Ejercicios con listas (ejer 3).pdb
