@@ -43,7 +43,7 @@ namespace Ej11
         int nacimiento = 30;    //segundos
         int muerte = 60;        // segundos
         int show = 10;          // segundos
-        int masivo = 1;         // minutos
+        int masivo = 2;         // minutos
 
         public int Nacimiento
         {
@@ -68,7 +68,7 @@ namespace Ej11
             }
         }
 
-        public int Explosion
+        public int Exterminio
         {
             get
             {
@@ -157,6 +157,7 @@ namespace Ej11
             Random randape = new Random();
             compara comparador = new compara();
             comparapais comparadorpais = new comparapais();
+            int cargasMinutos = 0;
 
             string msg = "";
             string nuevo = "";
@@ -228,6 +229,7 @@ namespace Ej11
                     personas.RemoveAt(randi);
                     muere = true;
                     DesdeMuerte = DateTime.Now;
+                    cargasMinutos++;
                 }
                 if (muerto.Seconds == 1)
                 {
@@ -312,9 +314,9 @@ namespace Ej11
                     refresh = false;
                 }
 
-                if (timeSpan.Minutes % config.Explosion == 0 && reinicio == false)
+                if (cargasMinutos == config.Exterminio && reinicio == false)
                 {
-                    int mueren = rand.Next(0, 2);
+                    int mueren = rand.Next(0, 3);
                     if (mueren == 0) {
                         personas.RemoveRange(0, arg);
                     }
@@ -322,16 +324,19 @@ namespace Ej11
                         personas.RemoveRange(arg, br);
                     }
                     if (mueren == 2) {
-                        personas.RemoveRange(br, para);
+                        personas.RemoveRange(arg + br, para);
                     }       
                     DesdeExti = DateTime.Now;
+                    cargasMinutos = 0;
+                    reinicio = true;
                 }
                 if (exti.Seconds == 1)
                 {
-                    reinicio = true;
+                    reinicio = false;
                 }
 
-                Console.WriteLine(timeSpan.Minutes);
+                Console.SetCursorPosition(0, 25); Console.Write(timeSpan.Seconds);
+                Console.SetCursorPosition(0, 26); Console.Write(cargasMinutos);
 
             }
         }
