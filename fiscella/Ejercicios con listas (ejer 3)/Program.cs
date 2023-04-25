@@ -335,8 +335,8 @@ namespace Ej11
                     reinicio = false;
                 }
 
-                Console.SetCursorPosition(0, 25); Console.Write(timeSpan.Seconds);
-                Console.SetCursorPosition(0, 26); Console.Write(cargasMinutos);
+                //Console.SetCursorPosition(0, 25); Console.Write(timeSpan.Seconds);
+                //Console.SetCursorPosition(0, 26); Console.Write(cargasMinutos);
 
             }
         }
