@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejer 9", "ejer 9\ejer 9.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejer 10", "ejer 10\ejer 10.csproj", "{C2CD6DDE-125C-4F9B-A004-856E9482A8F7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Introduccion a herencias", "Introduccion a herencias", "{236744EE-0AE0-4D2E-9987-97361D7A26A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Introduccion a herencias", "Introduccion a herencias\Introduccion a herencias.csproj", "{71CE9B58-DEB6-4767-8789-AE31AFCCFC5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +95,10 @@ Global
 		{C2CD6DDE-125C-4F9B-A004-856E9482A8F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2CD6DDE-125C-4F9B-A004-856E9482A8F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2CD6DDE-125C-4F9B-A004-856E9482A8F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71CE9B58-DEB6-4767-8789-AE31AFCCFC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71CE9B58-DEB6-4767-8789-AE31AFCCFC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71CE9B58-DEB6-4767-8789-AE31AFCCFC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71CE9B58-DEB6-4767-8789-AE31AFCCFC5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +117,7 @@ Global
 		{EE9D18B0-6218-4848-AD1E-D81FC7A62ED0} = {561D1DDA-44D4-4381-8C7E-92CBA436D168}
 		{89C4713C-047F-4656-92A4-C70AA29921D4} = {561D1DDA-44D4-4381-8C7E-92CBA436D168}
 		{C2CD6DDE-125C-4F9B-A004-856E9482A8F7} = {561D1DDA-44D4-4381-8C7E-92CBA436D168}
+		{71CE9B58-DEB6-4767-8789-AE31AFCCFC5B} = {236744EE-0AE0-4D2E-9987-97361D7A26A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {797C736E-D5F7-41AD-8D22-3A2D14A0F74E}

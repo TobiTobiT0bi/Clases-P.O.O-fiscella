@@ -1,0 +1,8 @@
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Introduccion a herencias\bin\Debug\Introduccion a herencias.exe.config
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Introduccion a herencias\bin\Debug\Introduccion a herencias.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Introduccion a herencias\bin\Debug\Introduccion a herencias.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Introduccion a herencias\obj\Debug\Introduccion a herencias.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Introduccion a herencias\obj\Debug\Introduccion a herencias.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Introduccion a herencias\obj\Debug\Introduccion a herencias.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Introduccion a herencias\obj\Debug\Introduccion a herencias.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Introduccion a herencias\obj\Debug\Introduccion a herencias.pdb
