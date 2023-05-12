@@ -6,3 +6,11 @@ C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\ejer 4\obj\Debug\
 C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\ejer 4\obj\Debug\ejer 4.csproj.CoreCompileInputs.cache
 C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\ejer 4\obj\Debug\ejer 4.exe
 C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\ejer 4\obj\Debug\ejer 4.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 4\bin\Debug\ejer 4.exe.config
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 4\bin\Debug\ejer 4.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 4\bin\Debug\ejer 4.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 4\obj\Debug\ejer 4.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 4\obj\Debug\ejer 4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 4\obj\Debug\ejer 4.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 4\obj\Debug\ejer 4.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 4\obj\Debug\ejer 4.pdb
