@@ -90,26 +90,26 @@ namespace EOPAM_1
             List<Cuenta> Cuentonas = new List<Cuenta>();
 
             Random rnd = new Random();
-            float cantusu;
+            double cantusu;
 
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 10; i++)
             {
 
                 string nombreusuario;
-                int cantemp = rnd.Next(55, 130);
-                cantusu = cantemp + Convert.ToSingle(rnd.NextDouble());
+                int cantemp = rnd.Next(350, 930);
+                cantusu = cantemp + Math.Round(rnd.NextDouble(), 2);
 
-                if (i < 15)
+                if (i < 3)
                 {
-                    nombreusuario = "fulanito fulanon n°" + i;
+                    nombreusuario = "fulanito fulanon n°" + (i + 1);
                 }
-                else if (i >= 15 && i < 40)
+                else if (i >= 3 && i < 6)
                 {
-                    nombreusuario = "foo fighters n°" + (i - 14);
+                    nombreusuario = "foo fighters n°" + (i - 2);
                 }
                 else
                 {
-                    nombreusuario = "foo fighters n°" + (i - 39);
+                    nombreusuario = "lets gooooo n°" + (i - 5);
                 }
 
                 Cuentonas.Add(new Cuenta(nombreusuario, cantusu));
@@ -174,7 +174,7 @@ namespace EOPAM_1
                         {
                             ConsoleKeyInfo keyc = Console.ReadKey();
 
-                            if (keyc.Key == ConsoleKey.DownArrow && posCuentas < 2)
+                            if (keyc.Key == ConsoleKey.DownArrow && posCuentas < Cuentonas.Count - 1)
                             {
                                 Console.SetCursorPosition(30, (posCuentas + 9));
                                 Console.WriteLine(Cuentonas[posCuentas].Titular);
@@ -210,7 +210,7 @@ namespace EOPAM_1
                                 Console.Write("Ingrese monto a ingresar:");
                                 Console.ResetColor();
                                 Console.Write(" ");
-                                double panqueques = Convert.ToSingle(Console.ReadLine());
+                                double panqueques = Convert.ToDouble(Console.ReadLine());
 
                                 Cuentonas[posCuentas].ingresar(panqueques);
 
@@ -250,7 +250,7 @@ namespace EOPAM_1
                         {
                             ConsoleKeyInfo keyc = Console.ReadKey();
 
-                            if (keyc.Key == ConsoleKey.DownArrow && posCuentas < 2)
+                            if (keyc.Key == ConsoleKey.DownArrow && posCuentas < Cuentonas.Count - 1)
                             {
                                 Console.SetCursorPosition(30, (posCuentas + 9));
                                 Console.WriteLine(Cuentonas[posCuentas].Titular);
@@ -286,11 +286,12 @@ namespace EOPAM_1
                                 Console.Write("Ingrese monto a retirar:");
                                 Console.ResetColor();
                                 Console.Write(" ");
-                                double panqueques = Convert.ToSingle(Console.ReadLine());
+                                double panqueques = Convert.ToDouble(Console.ReadLine());
 
                                 Cuentonas[posCuentas].retirar(panqueques);
 
                                 Console.Clear();
+                                pos = 0;
                                 CrearMenu(menuPrincipal, 0);
                                 break;
                             }
@@ -298,10 +299,15 @@ namespace EOPAM_1
                     }
                     if (pos == 2)
                     {
-                        foreach(Cuenta cuentita in Cuentonas){
-                            Console.Clear();
+                        Console.Clear();
+                        foreach (Cuenta cuentita in Cuentonas){                  
                             Console.WriteLine($"nombre: {cuentita.Titular}, saldo: {cuentita.Cantidad}");
                         }
+                        Console.ReadKey(true);
+
+                        Console.Clear();
+                        pos = 0;
+                        CrearMenu(menuPrincipal, 0);
                     }
                 }
             }
