@@ -41,8 +41,9 @@ namespace EOPAM_2
             'H',
             'M'
         };
+
         const char panqueques = 'H';
-        Random rnd = new Random();
+        static Random rnd = new Random();
 
         private string nombre = "";
         private int edad = 0;
@@ -123,8 +124,7 @@ namespace EOPAM_2
         {
             Int32 dni = rnd.Next(10000000, 99999999);
 
-            string dnis = Convert.ToString(dni).Insert(2, ".");
-            dnis = dnis.Insert(6, ".");
+            string dnis = Convert.ToString(dni).Insert(2, "."); dnis = dnis.Insert(6, ".");
             this.DNI = dnis;
 
             int sexo = rnd.Next(1, 3);
@@ -172,6 +172,7 @@ namespace EOPAM_2
         class Ejecutable {
             static void Main(string[] args)
             {
+                List<Int32> dniusados = new List<Int32>();
 
                 Console.WriteLine("Ingrese nombre: ");
                 string nombreN = Console.ReadLine();
@@ -217,6 +218,9 @@ namespace EOPAM_2
                 personas[2].Peso = 62.52;
                 personas[2].Altura = 1.87;
 
+                Console.Clear();
+                foreach (Persona per in personas) { per.mostrar(); }
+
                 for (int i = 0; i < personas.Count; i++)
                 {
                     int IMC = personas[i].calcularIMC();
@@ -235,8 +239,6 @@ namespace EOPAM_2
                     }
                 }
 
-                Console.Clear();
-                foreach (Persona per in personas) { per.mostrar(); }
                 Console.ReadKey();
 
             }
