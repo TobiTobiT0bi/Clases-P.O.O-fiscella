@@ -105,7 +105,7 @@ namespace EOPAM_2
             }
         }
 
-        public bool esMayorDeEdad() {
+        private bool esMayorDeEdad() {
 
             bool Result = false;
 
@@ -117,7 +117,7 @@ namespace EOPAM_2
             return Result;
         }
         public void mostrar() {
-            Console.WriteLine($"{nombre}: {edad} años, {sexo}, {peso}kg, {altura}m. DNI: {DNI}");
+            Console.WriteLine($"{nombre}: {edad} años, {sexo}, {peso}kg, {altura}m. DNI: {DNI}, mayor de edad: {esMayorDeEdad()}");
         }
 
         private void GenerarDNI()
