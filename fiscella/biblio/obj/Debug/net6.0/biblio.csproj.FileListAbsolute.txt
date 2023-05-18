@@ -1,0 +1,12 @@
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\bin\Debug\net6.0\biblio.deps.json
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\bin\Debug\net6.0\biblio.dll
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\bin\Debug\net6.0\biblio.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\obj\Debug\net6.0\biblio.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\obj\Debug\net6.0\biblio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\obj\Debug\net6.0\biblio.AssemblyInfoInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\obj\Debug\net6.0\biblio.AssemblyInfo.cs
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\obj\Debug\net6.0\biblio.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\obj\Debug\net6.0\biblio.dll
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\obj\Debug\net6.0\refint\biblio.dll
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\obj\Debug\net6.0\biblio.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\biblio\obj\Debug\net6.0\ref\biblio.dll

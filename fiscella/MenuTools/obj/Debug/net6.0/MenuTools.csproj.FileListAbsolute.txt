@@ -1,0 +1,12 @@
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\bin\Debug\net6.0\MenuTools.deps.json
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\bin\Debug\net6.0\MenuTools.dll
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\bin\Debug\net6.0\MenuTools.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\obj\Debug\net6.0\MenuTools.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\obj\Debug\net6.0\MenuTools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\obj\Debug\net6.0\MenuTools.AssemblyInfoInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\obj\Debug\net6.0\MenuTools.AssemblyInfo.cs
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\obj\Debug\net6.0\MenuTools.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\obj\Debug\net6.0\MenuTools.dll
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\obj\Debug\net6.0\refint\MenuTools.dll
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\obj\Debug\net6.0\MenuTools.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\MenuTools\obj\Debug\net6.0\ref\MenuTools.dll

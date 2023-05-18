@@ -49,5 +49,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MenuToolsshow\MenuToolsshow.csproj">
+      <Project>{fa7c5946-0925-47a1-bcf9-f0c2b976ca1d}</Project>
+      <Name>MenuToolsshow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MenuTools\MenuTools.csproj">
+      <Project>{543274e4-b99f-4c61-a70e-2758903fd719}</Project>
+      <Name>MenuTools</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
