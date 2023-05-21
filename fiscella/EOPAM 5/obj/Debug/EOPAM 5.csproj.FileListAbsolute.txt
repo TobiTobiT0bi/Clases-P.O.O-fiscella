@@ -6,3 +6,11 @@ C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 5\obj\Debug\EOPAM
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 5\obj\Debug\EOPAM 5.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 5\obj\Debug\EOPAM 5.exe
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 5\obj\Debug\EOPAM 5.pdb
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\EOPAM 5\bin\Debug\EOPAM 5.exe.config
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\EOPAM 5\bin\Debug\EOPAM 5.exe
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\EOPAM 5\bin\Debug\EOPAM 5.pdb
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\EOPAM 5\obj\Debug\EOPAM 5.csproj.AssemblyReference.cache
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\EOPAM 5\obj\Debug\EOPAM 5.csproj.SuggestedBindingRedirects.cache
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\EOPAM 5\obj\Debug\EOPAM 5.csproj.CoreCompileInputs.cache
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\EOPAM 5\obj\Debug\EOPAM 5.exe
+C:\Users\tobia\Documents\Github\Clases-P.O.O-fiscella\fiscella\EOPAM 5\obj\Debug\EOPAM 5.pdb

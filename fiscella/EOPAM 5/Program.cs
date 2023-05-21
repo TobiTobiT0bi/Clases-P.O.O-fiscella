@@ -1,8 +1,10 @@
-﻿using System;
+﻿using ejerciciosObligatorios5;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Globalization;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Permissions;
 using System.Text;
@@ -17,19 +19,19 @@ Un constructor por defecto.
 Un constructor con título y creador. El resto por defecto.
 Un constructor con todos los atributos, excepto de entregado.
 Los métodos que se implementara serán:
-Métodos de todos los atributos, excepto de entregado.
+Métodos get de todos los atributos, excepto de entregado.
 Métodos set de todos los atributos, excepto de entregado.
 Crearemos una clase Videojuego con las siguientes características:
 Sus atributos son titulo, horas estimadas, entregado, genero y compañia.
 Por defecto, las horas estimadas serán de 10 horas y entregado false. El resto de atributos serán valores por defecto según el tipo del atributo.
 Los constructores que se implementarán serán:
 Un constructor por defecto.
-Un constructor con el título y horas estimadas. El resto por defecto.
+Un constructor con el título y horas estimadas. El resto por defecto. panqueques
 Un constructor con todos los atributos, excepto de entregado.
 Los métodos que se implementara serán:
 Métodos get de todos los atributos, excepto de entregado.
 Métodos set de todos los atributos, excepto de entregado.
-Como vemos, en principio, las clases anteriores no son padre-hija, pero si tienen en común, por eso vamos a hacer una interfaz llamada Entregable con los siguientes métodos:
+Como vemos, en principio, las clases anteriores no son padre-hija, pero si tienen cosas en común, por eso vamos a hacer una interfaz llamada Entregable con los siguientes métodos:
 entregar(): cambia el atributo prestado a true.
 devolver(): cambia el atributo prestado a false.
 isEntregado(): devuelve el estado del atributo prestado.
@@ -45,21 +47,22 @@ Por último, indica que el Videojuego tiene más horas estimadas y la serie con 
 
 namespace ejerciciosObligatorios5
 {
-    class Serie
+    public class Serie
     {
-        const int tempoDefecto = 3;
-        const bool entregaDefecto = false;
+        private const int tempoDefecto = 3;
+        private const bool entregaDefecto = false;
 
-        public string titulo;
-        public int temporadas = tempoDefecto;
+        private string titulo;
+        private int temporadas = tempoDefecto;
         public bool entregado = entregaDefecto;
-        public string genero;
-        public string creador;
+        private string genero;
+        private string creador;
 
         public Serie()
         {
 
         }
+
         public Serie(string titulo, string creador)
         {
             this.titulo = titulo;
@@ -73,23 +76,34 @@ namespace ejerciciosObligatorios5
             this.creador = creador;
         }
 
-        static public Serie agregarSerie(string titulo, string creador)
-        {
-            return new Serie(titulo, creador);
+        public string Titulo {
+            get { return titulo; } set { titulo = value; }
         }
-        static public Serie agregarSerie(string titulo, int temporadas, string genero, string creador)
+
+        public int Temporadas
         {
-            return new Serie(titulo, temporadas, genero, creador);
+            get { return temporadas; } set { temporadas = value; }
+        }
+
+        public string Genero {
+            get { return genero; } set { genero = value; }
+        }
+
+        public string Creador { 
+            get {  return creador; } set {  creador = value; }
         }
     }
 
-    class Videojuego
+    public class Videojuego
     {
-        public string titulo;
-        public int horasEstimadas = 10;
-        public bool entregado = false;
-        public string genero;
-        public string compañia;
+        private const int horasDefecto = 10;
+        private const bool entregaDefecto = false;
+
+        private string titulo;
+        private int horasEstimadas = horasDefecto;
+        public bool entregado = entregaDefecto;
+        private string genero;
+        private string compania;
 
         public Videojuego()
         {
@@ -100,80 +114,80 @@ namespace ejerciciosObligatorios5
             this.titulo = titulo;
             this.horasEstimadas = horasEstimadas;
         }
-        public Videojuego(string titulo, int horasEstimadas, string genero, string compañia)
+        public Videojuego(string titulo, int horasEstimadas, string genero, string compania)
         {
             this.titulo = titulo;
             this.horasEstimadas = horasEstimadas;
             this.genero = genero;
-            this.compañia = compañia;
+            this.compania = compania;
         }
 
-        static public Videojuego agregarJuego(string titulo, int horasEstimadas)
+        public string Titulo
         {
-            return new Videojuego(titulo, horasEstimadas);
+            get { return titulo; }
+            set { titulo = value; }
         }
-        static public Videojuego agregarJuego(string titulo, int horasEstimadas, string genero, string compañia)
+
+        public int Horas
         {
-            return new Videojuego(titulo, horasEstimadas, genero, compañia);
+            get { return horasEstimadas; }
+            set { horasEstimadas = value; }
+        }
+
+        public string Genero
+        {
+            get { return genero; }
+            set { genero = value; }
+        }
+
+        public string Compania
+        {
+            get { return compania; }
+            set { compania = value; }
         }
     }
 
     class Entregable
     {
-        static public void entregar(Videojuego juego)
+        static public void entregar(Videojuego game)
         {
-            juego.entregado = true;
+            game.entregado = true;
         }
         static public void entregar(Serie serie)
         {
             serie.entregado = true;
         }
-        static public void devolver(Videojuego juego)
+        static public void devolver(Videojuego game)
         {
-            juego.entregado = false;
+            game.entregado = false;
         }
         static public void devolver(Serie serie)
         {
             serie.entregado = false;
         }
-        static public bool isEntregado(Videojuego juego)
+        static public bool isEntregado(Videojuego game)
         {
-            return juego.entregado;
+            return game.entregado;
         }
         static public bool isEntregado(Serie serie)
         {
             return serie.entregado;
         }
-        static public int compareTo(Videojuego[] juegos)
+        static public Videojuego[] compareTo(Videojuego[] games)
         {
-            int mayorJuego = 0;
-            int mayorJ = juegos[0].horasEstimadas;
+            Videojuego[] ordenado = new Videojuego[games.Length];
 
-            for (int i = 0; i < 5; i++)
-            {
-                int j = juegos[i].horasEstimadas;
-                if (mayorJ < j)
-                {
-                    mayorJuego = i;
-                    mayorJ = juegos[i].horasEstimadas;
-                }
-            }
-            return mayorJuego;
+            ordenado = games.OrderBy(Videojuego => Videojuego.Horas).Reverse().ToArray();
+
+            return ordenado;
         }
-        static public int compareTo(Serie[] series)
+        static public Serie[] compareTo(Serie[] series)
         {
-            int mayorSerie = 0;
-            int mayorS = series[0].temporadas;
+            Serie[] ordenado = new Serie[series.Length];
 
-            for (int i = 0; i < 5; i++)
-            {
-                if (mayorS < series[i].temporadas)
-                {
-                    mayorSerie = i;
-                    mayorS = series[i].temporadas;
-                }
-            }
-            return mayorSerie;
+            ordenado = series.OrderBy(Serie => Serie.Temporadas).Reverse().ToArray();
+
+            return ordenado;
         }
     }
     class Program
@@ -182,56 +196,67 @@ namespace ejerciciosObligatorios5
         {
             Serie[] series = new Serie[5];
             Videojuego[] juegos = new Videojuego[5];
+            Random rnd = new Random();
 
-            series[0] = Serie.agregarSerie("HIMYM", 9, "Comedia", "Craig Thomas");
-            series[1] = Serie.agregarSerie("Los chicos del barrio", 6, "Comedia", "Carter Bays");
-            series[2] = Serie.agregarSerie("Friends", 10, "Comedia", "James Burrows");
-            series[3] = Serie.agregarSerie("Brooklyn Nine-Nine", 8, "Comedia", "Michael Schur");
-            series[4] = Serie.agregarSerie("The Office", 9, "Comedia", "Greg Daniels");
-            juegos[0] = Videojuego.agregarJuego("Hollow Knight", 50, "Metroidvania", "TeamCherry");
-            juegos[1] = Videojuego.agregarJuego("Hollow Knight: Silksong", 100, "Metroidvania", "TeamCherry");
-            juegos[2] = Videojuego.agregarJuego("The Legend of Zelda: Breath Of The Wild", 50, "Mundo Abierto", "Nintendo");
-            juegos[3] = Videojuego.agregarJuego("The Stanley Parable", 1000, "Puzzles", "Valve");
-            juegos[4] = Videojuego.agregarJuego("Elden Ring", 200, "Mundo Abierto", "From SoftWare");
+            series[0] = new Serie("How I Met Your Mother", 9, "Comedia", "Craig Thomas");
+            series[1] = new Serie("Los chicos del barrio", 6, "Comedia", "Carter Bays");
+            series[2] = new Serie("Los simpsons", 29, "Comedia", "James Burrows");
+            series[3] = new Serie("Brooklyn Nine-Nine", 8, "Comedia", "Michael Schur");
+            series[4] = new Serie("The Office", 9, "Comedia", "Greg Daniels");
+            juegos[0] = new Videojuego("Hollow Knight", 50, "Metroidvania", "TeamCherry");
+            juegos[1] = new Videojuego("Dark Souls 3", 1000, "Metroidvania", "TeamCherry");
+            juegos[2] = new Videojuego("The Legend of Zelda: Tears Of The Kingdom", 250, "Mundo Abierto", "Nintendo");
+            juegos[3] = new Videojuego("The Stanley Parable", 87600, "Puzzles", "Valve");
+            juegos[4] = new Videojuego("Elden Ring", 500, "Mundo Abierto", "From SoftWare");
 
-            Entregable.entregar(juegos[2]);
-            Entregable.entregar(juegos[1]);
-            Entregable.entregar(juegos[3]);
-            Entregable.entregar(series[2]);
-            Entregable.entregar(series[0]);
+            for (int i = 0; i < 5; i++) {
+                int clase = rnd.Next(1, 3);
 
-            List<int> seriesEntregadas = new List<int>();
-            List<int> juegosEntregados = new List<int>();
+                switch (clase)
+                {
+
+                    case 1:
+                        Entregable.entregar(juegos[rnd.Next(0, 5)]);
+                        break;
+                    case 2:
+                        Entregable.entregar(series[rnd.Next(0, 5)]);
+                        break;
+                }
+            }   
+
+            List<Serie> seriesEntregadas = new List<Serie>();
+            List<Videojuego> juegosEntregados = new List<Videojuego>();
 
 
             for (int i = 0; i < 5; i++)
             {
                 if (Entregable.isEntregado(series[i]))
                 {
-                    seriesEntregadas.Add(i);
+                    seriesEntregadas.Add(series[i]);
                 }
                 if (Entregable.isEntregado(juegos[i]))
                 {
-                    juegosEntregados.Add(i);
+                    juegosEntregados.Add(juegos[i]);
                 }
             }
+
             Console.WriteLine("Cantidad de juegos entregados: " + juegosEntregados.Count);
-            Console.WriteLine("Estos juegos son: ");
-            foreach (int ju in juegosEntregados)
+            Console.WriteLine("\nEstos juegos son: ");
+            foreach(Videojuego ju in juegosEntregados)
             {
-                Console.WriteLine(juegos[ju].titulo);
+                Console.WriteLine(ju.Titulo);
             }
             Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("Cantidad de series entregadas: " + seriesEntregadas.Count);
-            Console.WriteLine("Estas series son: ");
-            foreach (int se in seriesEntregadas)
+            Console.WriteLine("\nEstas series son: ");
+            foreach (Serie se in seriesEntregadas)
             {
-                Console.WriteLine(series[se].titulo);
+                Console.WriteLine(se.Titulo);
             }
             Console.WriteLine("---------------------------------------------------------------");
-            Console.WriteLine("El juego con mas horas estimadas es: " + juegos[Entregable.compareTo(juegos)].titulo);
+            Console.WriteLine("El juego con mas horas estimadas es: " + Entregable.compareTo(juegos)[0].Titulo);
             Console.WriteLine("---------------------------------------------------------------");
-            Console.WriteLine("La serie con mas temporadas es: " + series[Entregable.compareTo(series)].titulo);
+            Console.WriteLine("La serie con mas temporadas es: " + Entregable.compareTo(series)[0].Titulo);
 
             Console.ReadKey();
         }
