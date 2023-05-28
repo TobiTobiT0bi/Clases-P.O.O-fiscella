@@ -125,7 +125,7 @@ class Television                                                                
                                                                                                                                                                                     }
     public Television(float peso, float precio) : base(peso, precio)                                                                                                                {
                                                                                                                                                                                     }
-    public Television(float precio, string color, float peso, char consumo_energetico, float resolucion, bool sintonizador)                                                         : base(precio, color, peso, consumo_energetico)
+    public Television(float precio, string color, float peso, char consumo_energetico, float resolucion, bool sintonizador)                                                         : base(precio, color, peso, consumo_energetico) //panqueques
                                                                                                                                                                                     {
         this.sintonizador = sintonizador                                                                                                                                            ;
         this.resolucion = resolucion                                                                                                                                                ;
