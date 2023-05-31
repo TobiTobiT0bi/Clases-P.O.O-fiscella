@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\biblio\\biblio.csproj": {}
+    "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\biblio\\biblio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\biblio\\biblio.csproj": {
+    "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\biblio\\biblio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\biblio\\biblio.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\biblio\\biblio.csproj",
         "projectName": "biblio",
-        "projectPath": "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\biblio\\biblio.csproj",
-        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\biblio\\obj\\",
+        "projectPath": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\biblio\\biblio.csproj",
+        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\biblio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

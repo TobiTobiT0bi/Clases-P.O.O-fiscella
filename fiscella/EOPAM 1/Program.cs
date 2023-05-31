@@ -1,4 +1,5 @@
-﻿using System;
+﻿using menuTools;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -84,8 +85,11 @@ namespace EOPAM_1
                 " 3. saldo      ",
             };
             int pos = 0;
+            bool pase = false;
 
-            CrearMenu(menuPrincipal, 0);
+            Menu menu = new Menu();
+
+            menu.Crear(menuPrincipal);
 
             List<Cuenta> Cuentonas = new List<Cuenta>();
 
@@ -117,6 +121,7 @@ namespace EOPAM_1
 
             while (true)
             {
+                /*
                 ConsoleKeyInfo key = Console.ReadKey();
 
                 if (key.Key == ConsoleKey.DownArrow && pos < 2)
@@ -141,174 +146,179 @@ namespace EOPAM_1
                     Console.SetCursorPosition(30, (pos + 8));
                     Console.WriteLine(menuPrincipal[pos]);
                     Console.ResetColor();
-                }
+                } */
 
-                if (key.Key == ConsoleKey.Enter)
+                pos = menu.movilidad(pos, menuPrincipal);
+
+                if (pos == 0)
                 {
-                    if (pos == 0)
+                    Console.Clear();
+                    Console.SetCursorPosition(30, 8);
+                    Console.WriteLine("seleccione usuario: ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    for (int i = 0; i < Cuentonas.Count; i++)
                     {
-                        Console.Clear();
-                        Console.SetCursorPosition(30, 8);
-                        Console.WriteLine("seleccione usuario: ");
-                        Console.ForegroundColor = ConsoleColor.White;
-                        Console.BackgroundColor = ConsoleColor.Green;
-                        for (int i = 0; i < Cuentonas.Count; i++)
+                        if (i == 0)
                         {
-                            if (i == 0)
-                            {
-                                Console.SetCursorPosition(30, 9);
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.BackgroundColor = ConsoleColor.Green;
-                                Console.WriteLine(Cuentonas[i].Titular);
-                                Console.ResetColor();
-                            }
-                            else
-                            {
-                                Console.SetCursorPosition(30, (i + 9));
-                                Console.WriteLine(Cuentonas[i].Titular);
-                            }
+                            Console.SetCursorPosition(30, 9);
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.BackgroundColor = ConsoleColor.Green;
+                            Console.WriteLine(Cuentonas[i].Titular);
+                            Console.ResetColor();
                         }
-                        int posCuentas = 0;
-
-                        while (true)
+                        else
                         {
-                            ConsoleKeyInfo keyc = Console.ReadKey();
-
-                            if (keyc.Key == ConsoleKey.DownArrow && posCuentas < Cuentonas.Count - 1)
-                            {
-                                Console.SetCursorPosition(30, (posCuentas + 9));
-                                Console.WriteLine(Cuentonas[posCuentas].Titular);
-                                posCuentas++;
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.BackgroundColor = ConsoleColor.Green;
-                                Console.SetCursorPosition(30, (posCuentas + 9));
-                                Console.WriteLine(Cuentonas[posCuentas].Titular);
-                                Console.ResetColor();
-                            }
-
-                            if (keyc.Key == ConsoleKey.UpArrow && posCuentas > 0)
-                            {
-                                Console.SetCursorPosition(30, (posCuentas + 9));
-                                Console.WriteLine(Cuentonas[posCuentas].Titular);
-                                posCuentas--;
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.BackgroundColor = ConsoleColor.Green;
-                                Console.SetCursorPosition(30, (posCuentas + 9));
-                                Console.WriteLine(Cuentonas[posCuentas].Titular);
-                                Console.ResetColor();
-                            }
-
-                            if (keyc.Key == ConsoleKey.Enter)
-                            {
-
-                                Console.Clear();
-                                Console.SetCursorPosition(30, 8);
-                                Console.WriteLine("saldo del usuario: " + Cuentonas[posCuentas].Cantidad);
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.BackgroundColor = ConsoleColor.Green;
-                                Console.SetCursorPosition(30, Console.CursorTop);
-                                Console.Write("Ingrese monto a ingresar:");
-                                Console.ResetColor();
-                                Console.Write(" ");
-                                double panqueques = Convert.ToDouble(Console.ReadLine());
-
-                                Cuentonas[posCuentas].ingresar(panqueques);
-
-                                Console.Clear();
-                                CrearMenu(menuPrincipal, 0);
-                                break;
-                            }
-
+                            Console.SetCursorPosition(30, (i + 9));
+                            Console.WriteLine(Cuentonas[i].Titular);
                         }
                     }
-                    if (pos == 1)
+                    int posCuentas = 0;
+                    string[] titulares = new string[Cuentonas.Count];
+
+                    for (int i = 0; i < Cuentonas.Count; i++)
                     {
-                        Console.Clear();
-                        Console.SetCursorPosition(30, 8);
-                        Console.WriteLine("seleccione usuario: ");
-                        Console.ForegroundColor = ConsoleColor.White;
-                        Console.BackgroundColor = ConsoleColor.Green;
-                        for (int i = 0; i < Cuentonas.Count; i++)
+                        titulares[i] = Cuentonas[i].Titular;
+                    }
+
+                    /* while (true)
+                    {
+                        ConsoleKeyInfo keyc = Console.ReadKey();
+
+                        if (keyc.Key == ConsoleKey.DownArrow && posCuentas < Cuentonas.Count - 1)
                         {
-                            if (i == 0)
-                            {
-                                Console.SetCursorPosition(30, 9);
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.BackgroundColor = ConsoleColor.Green;
-                                Console.WriteLine(Cuentonas[i].Titular);
-                                Console.ResetColor();
-                            }
-                            else
-                            {
-                                Console.SetCursorPosition(30, (i + 9));
-                                Console.WriteLine(Cuentonas[i].Titular);
-                            }
+                            Console.SetCursorPosition(30, (posCuentas + 9));
+                            Console.WriteLine(Cuentonas[posCuentas].Titular);
+                            posCuentas++;
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.BackgroundColor = ConsoleColor.Green;
+                            Console.SetCursorPosition(30, (posCuentas + 9));
+                            Console.WriteLine(Cuentonas[posCuentas].Titular);
+                            Console.ResetColor();
                         }
-                        int posCuentas = 0;
 
-                        while (true)
+                        if (keyc.Key == ConsoleKey.UpArrow && posCuentas > 0)
                         {
-                            ConsoleKeyInfo keyc = Console.ReadKey();
+                            Console.SetCursorPosition(30, (posCuentas + 9));
+                            Console.WriteLine(Cuentonas[posCuentas].Titular);
+                            posCuentas--;
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.BackgroundColor = ConsoleColor.Green;
+                            Console.SetCursorPosition(30, (posCuentas + 9));
+                            Console.WriteLine(Cuentonas[posCuentas].Titular);
+                            Console.ResetColor();
+                        }
 
-                            if (keyc.Key == ConsoleKey.DownArrow && posCuentas < Cuentonas.Count - 1)
-                            {
-                                Console.SetCursorPosition(30, (posCuentas + 9));
-                                Console.WriteLine(Cuentonas[posCuentas].Titular);
-                                posCuentas++;
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.BackgroundColor = ConsoleColor.Green;
-                                Console.SetCursorPosition(30, (posCuentas + 9));
-                                Console.WriteLine(Cuentonas[posCuentas].Titular);
-                                Console.ResetColor();
-                            }
+                        if (keyc.Key == ConsoleKey.Enter)
+                        {*/
 
-                            if (keyc.Key == ConsoleKey.UpArrow && posCuentas > 0)
-                            {
-                                Console.SetCursorPosition(30, (posCuentas + 9));
-                                Console.WriteLine(Cuentonas[posCuentas].Titular);
-                                posCuentas--;
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.BackgroundColor = ConsoleColor.Green;
-                                Console.SetCursorPosition(30, (posCuentas + 9));
-                                Console.WriteLine(Cuentonas[posCuentas].Titular);
-                                Console.ResetColor();
-                            }
+                    posCuentas = menu.movilidad(posCuentas, titulares);
 
-                            if (keyc.Key == ConsoleKey.Enter)
-                            {
+                    Console.Clear();
+                    Console.SetCursorPosition(30, 8);
+                    Console.WriteLine("saldo del usuario: " + Cuentonas[posCuentas].Cantidad);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.SetCursorPosition(30, Console.CursorTop);
+                    Console.Write("Ingrese monto a ingresar:");
+                    Console.ResetColor();
+                    Console.Write(" ");
+                    double panqueques = Convert.ToDouble(Console.ReadLine());
 
-                                Console.Clear();
-                                Console.SetCursorPosition(30, 8);
-                                Console.WriteLine("saldo del usuario: " + Cuentonas[posCuentas].Cantidad);
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.BackgroundColor = ConsoleColor.Green;
-                                Console.SetCursorPosition(30, Console.CursorTop);
-                                Console.Write("Ingrese monto a retirar:");
-                                Console.ResetColor();
-                                Console.Write(" ");
-                                double panqueques = Convert.ToDouble(Console.ReadLine());
+                    Cuentonas[posCuentas].ingresar(panqueques);
 
-                                Cuentonas[posCuentas].retirar(panqueques);
-
-                                Console.Clear();
-                                pos = 0;
-                                CrearMenu(menuPrincipal, 0);
-                                break;
-                            }
+                    Console.Clear();
+                    CrearMenu(menuPrincipal, 0);
+                    break;
+                }
+                if (pos == 1)
+                {
+                    Console.Clear();
+                    Console.SetCursorPosition(30, 8);
+                    Console.WriteLine("seleccione usuario: ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    for (int i = 0; i < Cuentonas.Count; i++)
+                    {
+                        if (i == 0)
+                        {
+                            Console.SetCursorPosition(30, 9);
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.BackgroundColor = ConsoleColor.Green;
+                            Console.WriteLine(Cuentonas[i].Titular);
+                            Console.ResetColor();
+                        }
+                        else
+                        {
+                            Console.SetCursorPosition(30, (i + 9));
+                            Console.WriteLine(Cuentonas[i].Titular);
                         }
                     }
-                    if (pos == 2)
-                    {
-                        Console.Clear();
-                        foreach (Cuenta cuentita in Cuentonas){                  
-                            Console.WriteLine($"nombre: {cuentita.Titular}, saldo: {cuentita.Cantidad}");
-                        }
-                        Console.ReadKey(true);
+                    int posCuentas = 0;
 
-                        Console.Clear();
-                        pos = 0;
-                        CrearMenu(menuPrincipal, 0);
+                    while (true)
+                    {
+                        ConsoleKeyInfo keyc = Console.ReadKey();
+
+                        if (keyc.Key == ConsoleKey.DownArrow && posCuentas < Cuentonas.Count - 1)
+                        {
+                            Console.SetCursorPosition(30, (posCuentas + 9));
+                            Console.WriteLine(Cuentonas[posCuentas].Titular);
+                            posCuentas++;
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.BackgroundColor = ConsoleColor.Green;
+                            Console.SetCursorPosition(30, (posCuentas + 9));
+                            Console.WriteLine(Cuentonas[posCuentas].Titular);
+                            Console.ResetColor();
+                        }
+
+                        if (keyc.Key == ConsoleKey.UpArrow && posCuentas > 0)
+                        {
+                            Console.SetCursorPosition(30, (posCuentas + 9));
+                            Console.WriteLine(Cuentonas[posCuentas].Titular);
+                            posCuentas--;
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.BackgroundColor = ConsoleColor.Green;
+                            Console.SetCursorPosition(30, (posCuentas + 9));
+                            Console.WriteLine(Cuentonas[posCuentas].Titular);
+                            Console.ResetColor();
+                        }
+
+                        if (keyc.Key == ConsoleKey.Enter)
+                        {
+
+                            Console.Clear();
+                            Console.SetCursorPosition(30, 8);
+                            Console.WriteLine("saldo del usuario: " + Cuentonas[posCuentas].Cantidad);
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.BackgroundColor = ConsoleColor.Green;
+                            Console.SetCursorPosition(30, Console.CursorTop);
+                            Console.Write("Ingrese monto a retirar:");
+                            Console.ResetColor();
+                            Console.Write(" ");
+                            double panqueques = Convert.ToDouble(Console.ReadLine());
+
+                            Cuentonas[posCuentas].retirar(panqueques);
+
+                            Console.Clear();
+                            pos = 0;
+                            CrearMenu(menuPrincipal, 0);
+                            break;
+                        }
                     }
+                }
+                if (pos == 2)
+                {
+                    Console.Clear();
+                    foreach (Cuenta cuentita in Cuentonas)
+                    {
+                        Console.WriteLine($"nombre: {cuentita.Titular}, saldo: {cuentita.Cantidad}");
+                    }
+                    Console.ReadKey(true);
+
+                    Console.Clear();
+                    pos = 0;
+                    CrearMenu(menuPrincipal, 0);
                 }
             }
         }

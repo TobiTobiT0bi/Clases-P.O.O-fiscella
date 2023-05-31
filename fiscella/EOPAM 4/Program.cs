@@ -108,7 +108,7 @@ class Lavadora                                                                  
             return this.carga                                                                                                                                                       ;
                                                                                                                                                                                     }
                                                                                                                                                                                     }
-    public float precioFinal()                                                                                                                                                      {
+    public new float precioFinal()                                                                                                                                                      {
         float precio = base.precioFinal()                                                                                                                                           ;
         if (this.carga > 30)                                                                                                                                                        {
             precio += 50                                                                                                                                                            ;
@@ -140,7 +140,7 @@ class Television                                                                
             return this.sintonizador                                                                                                                                                ;
                                                                                                                                                                                     }
                                                                                                                                                                                     }
-    public float precioFinal()                                                                                                                                                      {
+    public new float precioFinal()                                                                                                                                                      {
         float precio = base.precioFinal()                                                                                                                                           ;
         if (this.sintonizador)                                                                                                                                                      {
             precio += 50                                                                                                                                                            ;

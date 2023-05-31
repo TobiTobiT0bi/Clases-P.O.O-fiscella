@@ -138,7 +138,7 @@ class Lavadora : Electrodomestico
         }
     }
 
-    public float precioFinal()
+    public new float precioFinal()
     {
         float precio = base.precioFinal();
         if (this.carga > 30)
@@ -176,7 +176,7 @@ class Television : Electrodomestico
         }
     }
 
-    public float precioFinal()
+    public new float precioFinal()
     {
         float precio = base.precioFinal();
         if (this.sintonizador)

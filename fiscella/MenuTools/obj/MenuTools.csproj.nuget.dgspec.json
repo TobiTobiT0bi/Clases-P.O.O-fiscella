@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\MenuTools\\MenuTools.csproj": {}
+    "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\menuTools.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\MenuTools\\MenuTools.csproj": {
+    "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\menuTools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\MenuTools\\MenuTools.csproj",
-        "projectName": "MenuTools",
-        "projectPath": "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\MenuTools\\MenuTools.csproj",
-        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tobia\\Documents\\Github\\Clases-P.O.O-fiscella\\fiscella\\MenuTools\\obj\\",
+        "projectUniqueName": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\menuTools.csproj",
+        "projectName": "menuTools",
+        "projectPath": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\menuTools.csproj",
+        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

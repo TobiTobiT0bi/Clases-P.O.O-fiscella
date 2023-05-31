@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("MenuTools")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("menuTools")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("MenuTools")]
-[assembly: System.Reflection.AssemblyTitleAttribute("MenuTools")]
+[assembly: System.Reflection.AssemblyProductAttribute("menuTools")]
+[assembly: System.Reflection.AssemblyTitleAttribute("menuTools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
