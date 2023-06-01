@@ -1,0 +1,8 @@
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer chati 1\bin\Debug\ejer chati 1.exe.config
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer chati 1\bin\Debug\ejer chati 1.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer chati 1\bin\Debug\ejer chati 1.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer chati 1\obj\Debug\ejer chati 1.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer chati 1\obj\Debug\ejer chati 1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer chati 1\obj\Debug\ejer chati 1.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer chati 1\obj\Debug\ejer chati 1.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer chati 1\obj\Debug\ejer chati 1.pdb
