@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\menuTools.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Documents\\GitHub\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\menuTools.csproj",
       "projectName": "menuTools",
-      "projectPath": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\menuTools.csproj",
+      "projectPath": "C:\\Users\\Alumno\\Documents\\GitHub\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\menuTools.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\obj\\",
+      "outputPath": "C:\\Users\\Alumno\\Documents\\GitHub\\Clases-P.O.O-fiscella\\fiscella\\menuTools\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
