@@ -33,9 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MenuTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="menuTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MenuTools\obj\Debug\net6.0\MenuTools.dll</HintPath>
+      <HintPath>..\menuTools\obj\Debug\menuTools.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
