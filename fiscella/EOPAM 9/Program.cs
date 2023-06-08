@@ -80,7 +80,7 @@ namespace EOPAM_9
 
             Sala sala = new Sala(pelis[rnd.Next(0, pelis.Count())], rnd.Next(0, 75) + Math.Round(rnd.NextDouble(), 2), asientos);
 
-            for (int i = 0; i < 144; i++)
+            for (int i = 0; i < 120; i++)
             {
                 espectadores.Add(new Espectador(nombres[rnd.Next(0, nombres.Length)], rnd.Next(5, 60), rnd.Next(0, 100) + Math.Round(rnd.NextDouble(), 2)));
             }

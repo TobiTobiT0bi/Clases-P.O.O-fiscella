@@ -2,17 +2,16 @@
 
 namespace menuTools
 {
-    public class Menu
+    public abstract class Menu
     {
-        public void Crear(string[] menu)
+        public static void Crear(string[] menu)
         {
             for (int i = 0; i < menu.Length; i++)
             {
                 if (i == 0)
                 {
                     Console.SetCursorPosition(30, 8);
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine(menu[i]);
                     Console.ResetColor();
                 }
@@ -24,15 +23,14 @@ namespace menuTools
             }
         }
 
-        public void Crear(string[] menu, int avance)
+        public static void Crear(string[] menu, int avance)
         {
             for (int i = 0; i < menu.Length; i++)
             {
                 if (i == 0)
                 {
                     Console.SetCursorPosition(30, 8 + avance);
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine(menu[i]);
                     Console.ResetColor();
                 }
@@ -44,7 +42,7 @@ namespace menuTools
             }
         }
 
-        public int movilidad(int pos, string[] menu)
+        public static int movilidad(int pos, string[] menu)
         {
             while (true)
             {
@@ -55,8 +53,7 @@ namespace menuTools
                     Console.SetCursorPosition(30, (pos + 8));
                     Console.WriteLine(menu[pos]);
                     pos++;
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.SetCursorPosition(30, (pos + 8));
                     Console.WriteLine(menu[pos]);
                     Console.ResetColor();
@@ -67,8 +64,7 @@ namespace menuTools
                     Console.SetCursorPosition(30, (pos + 8));
                     Console.WriteLine(menu[pos]);
                     pos--;
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.SetCursorPosition(30, (pos + 8));
                     Console.WriteLine(menu[pos]);
                     Console.ResetColor();

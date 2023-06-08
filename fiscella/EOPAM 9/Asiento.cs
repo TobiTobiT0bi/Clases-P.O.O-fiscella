@@ -19,7 +19,7 @@ namespace EOPAM_9
         }
 
         public string coordenadasAString() {
-            return $"{fila} {columna}";
+            return $"{fila}{columna}";
         }
         public int Fila
         {

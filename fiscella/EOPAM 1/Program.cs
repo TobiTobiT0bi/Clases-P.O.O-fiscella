@@ -85,11 +85,8 @@ namespace EOPAM_1
                 " 3. saldo      ",
             };
             int pos = 0;
-            bool pase = false;
 
-            Menu menu = new Menu();
-
-            menu.Crear(menuPrincipal);
+            Menu.Crear(menuPrincipal);
 
             List<Cuenta> Cuentonas = new List<Cuenta>();
 
@@ -148,7 +145,7 @@ namespace EOPAM_1
                     Console.ResetColor();
                 } */
 
-                pos = menu.movilidad(pos, menuPrincipal);
+                pos = Menu.movilidad(pos, menuPrincipal);
 
                 if (pos == 0)
                 {
@@ -212,7 +209,7 @@ namespace EOPAM_1
                         if (keyc.Key == ConsoleKey.Enter)
                         {*/
 
-                    posCuentas = menu.movilidad(posCuentas, titulares);
+                    posCuentas = Menu.movilidad(posCuentas, titulares);
 
                     Console.Clear();
                     Console.SetCursorPosition(30, 8);
