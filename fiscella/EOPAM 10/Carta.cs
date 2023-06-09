@@ -8,7 +8,7 @@ namespace EOPAM_10
 {
     internal class Carta
     {
-        int numero;
+        public int numero;
         string palo;
         
 

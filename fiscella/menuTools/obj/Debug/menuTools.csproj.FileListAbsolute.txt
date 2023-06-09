@@ -10,3 +10,9 @@ C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\menuTools\obj\Debug\men
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\menuTools\obj\Debug\menuTools.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\menuTools\obj\Debug\menuTools.dll
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\menuTools\obj\Debug\menuTools.pdb
+C:\Clases-P.O.O-fiscella\fiscella\menuTools\bin\Debug\menuTools.dll
+C:\Clases-P.O.O-fiscella\fiscella\menuTools\bin\Debug\menuTools.pdb
+C:\Clases-P.O.O-fiscella\fiscella\menuTools\obj\Debug\menuTools.csproj.AssemblyReference.cache
+C:\Clases-P.O.O-fiscella\fiscella\menuTools\obj\Debug\menuTools.csproj.CoreCompileInputs.cache
+C:\Clases-P.O.O-fiscella\fiscella\menuTools\obj\Debug\menuTools.dll
+C:\Clases-P.O.O-fiscella\fiscella\menuTools\obj\Debug\menuTools.pdb

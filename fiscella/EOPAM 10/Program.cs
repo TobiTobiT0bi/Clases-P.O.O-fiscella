@@ -23,14 +23,63 @@ namespace EOPAM_10
 {
     internal class Program
     {
+        static void ejecutarBaraja(Carta carta, string msjTrue, string msjFalse, int pos = 12)
+        {
+            if (carta != null)
+            {
+                Console.SetCursorPosition(70, pos);
+                Console.Write("                                              ");
+                Console.SetCursorPosition(70, pos);
+                Console.Write($"{msjTrue}{carta.Mostrar()}.");
+            }
+            else
+            {
+                Console.SetCursorPosition(70, pos);
+                Console.Write("                                              ");
+                Console.SetCursorPosition(70, pos);
+                Console.WriteLine($"{msjFalse}");
+            }
+        }
+
+        static void ejecutarBaraja(List<string> bar, string msjFalse, int pos = 12)
+        {
+            if (bar != null)
+            {
+                Console.SetCursorPosition(70, pos);
+                Console.Write("                                              ");
+                Console.SetCursorPosition(70, pos);
+                // Console.Write(string.Join("\n", bar)); no sirve pa ordenar :(
+
+                for (int i = 0; i < bar.Count(); i++) {
+                    Console.SetCursorPosition(70, pos + i);
+                    Console.Write(bar[i]);
+                }
+            }
+            else
+            {
+                Console.SetCursorPosition(70, pos);
+                Console.Write("                                              ");
+                Console.SetCursorPosition(70, pos);
+                Console.WriteLine($"{msjFalse}");
+            }
+        }
+
+        static void wipe() {
+            Console.SetCursorPosition(70, 12);
+            Console.Write("                                                     ");
+            Console.SetCursorPosition(70, 12);
+        }
+
         static void Main(string[] args)
         {
             Random rnd = new Random();
+            Carta cartaTemp;
+            int pos = 0;
 
             List<Carta> baraja = new List<Carta>();
             string[] palos = { "oro", "basto", "copa", "espada" };
 
-            for (int i = 1; i <= palos.Length; i++) {                           //
+            for (int i = 0; i < palos.Length; i++) {                            //
                 for (int j = 1; j <= 12; j++) {                                 //
                     if(j != 8 && j!= 9) {                                       //
                         baraja.Add(new Carta(j, palos[i]));                     // Generación de Cartas
@@ -41,26 +90,121 @@ namespace EOPAM_10
             Baraja bar = new Baraja(baraja.ToArray());
 
             string[] menu = {
-                "1. Siguiente carta",
-                "2. Cartas disponibles",
-                "3. Dar cartas",
-                "4. Cartas ya salidas",
-                "5. Mostrar baraja",
-                "6. Barajar",
-                "7. salir"
+                "1. Siguiente carta    ",
+                "2. Cartas disponibles ",
+                "3. Dar cartas         ",
+                "4. Cartas ya salidas  ",
+                "5. Mostrar baraja     ",
+                "6. Barajar            ",
+                "7. volver a mezclar   ",
+                "8. resetear           ",
+                "9. salir             "
             };
 
-            Menu.Crear(menu);
+            Menu.Crear(menu, 30);
 
-            int seleccion = Menu.movilidad(0, menu);
+            Console.SetCursorPosition(70, 10);
+            Console.WriteLine($"Cartas en la baraja originalmente: {bar.Count()}");
 
-            switch (seleccion)
+            while (true)
             {
-                case 0:
-                    bar.siguienteCarta(); break;
-                case 1:
-                    bar.cartasDisponibles(); break;
+                int seleccion = Menu.movilidad(pos, menu, 30);
+                bool salir = false;
+
+                switch (seleccion)
+                {
+                    case 0:
+                        //cartaTemp = bar.siguienteCarta() != null ? Console.Write($"La carta salida es: a.") : Console.WriteLine("No hay mas cartas en la baraja.");    CS0029: No se puede convertir implicitamente el tipo 'void' en 'EOPAM_10.Carta' {buscar despues!!!}
+
+                        cartaTemp = bar.siguienteCarta();
+
+                        ejecutarBaraja(cartaTemp, "La carta salida es: ", "No hay mas cartas en la baraja.");
+
+                        pos = 0; break;
+
+                    case 1:
+                        wipe();
+                        Console.WriteLine($"cartas disponibles: {bar.cartasDisponibles()}");
+                        pos = 1; break;
+                    case 2:
+                        Console.SetCursorPosition(70, 12);
+                        Console.WriteLine("ingrese la cantidad de cartas que quiere sacar");
+                        Console.SetCursorPosition(70, 13);
+                        int cant = Convert.ToInt32(Console.ReadLine());
+
+                        ejecutarBaraja(bar.darCartas(cant), "Cartas insuficientes en el mazo.");
+
+                        Console.SetCursorPosition(70, 8);
+                        Console.Write("(Presiona cualquier tecla para reiniciar)");
+                        Console.ReadKey(true);
+                        Console.Clear();
+
+                        Menu.Crear(menu, 30);
+
+                        Console.SetCursorPosition(70, 10);
+                        Console.WriteLine($"Cartas en la baraja originalmente: {bar.Count()}");
+
+                        pos = 0; break;
+                    case 3:
+                        ejecutarBaraja(bar.cartasMonton(), "Todavia no a salido ninguna carta.");
+
+                        Console.SetCursorPosition(70, 8);
+                        Console.Write("(Presiona cualquier tecla para reiniciar)");
+                        Console.ReadKey(true);
+                        Console.Clear();
+
+                        Menu.Crear(menu, 30);
+
+                        Console.SetCursorPosition(70, 10);
+                        Console.WriteLine($"Cartas en la baraja originalmente: {bar.Count()}");
+
+                        pos = 0; break;
+                    case 4:
+                        ejecutarBaraja(bar.mostrarBaraja(), "Han salido todas las cartas.");
+
+                        Console.SetCursorPosition(70, 8);
+                        Console.Write("(Presiona cualquier tecla para reiniciar)");
+                        Console.ReadKey(true);
+                        Console.Clear();
+
+                        Menu.Crear(menu, 30);
+
+                        Console.SetCursorPosition(70, 10);
+                        Console.WriteLine($"Cartas en la baraja originalmente: {bar.Count()}");
+
+                        pos = 0; break;
+                    case 5:
+                        wipe();
+                        Console.WriteLine("barajando...");
+                        bar.barajar(rnd);
+                        wipe();
+                        Console.WriteLine("mazo barajado.");
+
+                        pos = 5; break;
+                    case 6:
+                        wipe();
+                        Console.WriteLine("mezclando");
+                        bar.mazo(rnd);
+                        wipe();
+                        Console.WriteLine("mazo rehecho.");
+
+                        pos = 6; break;
+                    case 7:
+                        wipe();
+                        Console.WriteLine("Restaurando");
+                        bar.reset();
+                        wipe();
+                        Console.WriteLine("mazo reseteado.");
+
+                        pos = 7; break;
+                    case 8:
+                        salir = true;
+                        pos = 0; break;
+                }
+
+                if (salir == true) break;
             }
+            
         }
     }
 }

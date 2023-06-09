@@ -1,0 +1,11 @@
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\EOPAM 10.exe.config
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\EOPAM 10.exe
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\EOPAM 10.pdb
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\menuTools.dll
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\menuTools.pdb
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.AssemblyReference.cache
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.SuggestedBindingRedirects.cache
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.CoreCompileInputs.cache
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.CopyComplete
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.exe
+C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.pdb
