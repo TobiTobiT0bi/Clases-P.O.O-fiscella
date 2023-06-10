@@ -9,3 +9,14 @@ C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.CoreCompile
 C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.CopyComplete
 C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.exe
 C:\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.pdb
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\EOPAM 10.exe.config
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\EOPAM 10.exe
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\EOPAM 10.pdb
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\menuTools.dll
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\bin\Debug\menuTools.pdb
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.AssemblyReference.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.SuggestedBindingRedirects.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.CoreCompileInputs.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.csproj.CopyComplete
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.exe
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 10\obj\Debug\EOPAM 10.pdb
