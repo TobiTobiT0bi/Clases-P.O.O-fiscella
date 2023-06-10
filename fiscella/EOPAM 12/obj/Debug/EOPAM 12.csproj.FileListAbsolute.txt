@@ -1,0 +1,8 @@
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 12\bin\Debug\EOPAM 12.exe.config
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 12\bin\Debug\EOPAM 12.exe
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 12\bin\Debug\EOPAM 12.pdb
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 12\obj\Debug\EOPAM 12.csproj.AssemblyReference.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 12\obj\Debug\EOPAM 12.csproj.SuggestedBindingRedirects.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 12\obj\Debug\EOPAM 12.csproj.CoreCompileInputs.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 12\obj\Debug\EOPAM 12.exe
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\EOPAM 12\obj\Debug\EOPAM 12.pdb
