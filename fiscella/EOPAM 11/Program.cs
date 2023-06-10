@@ -26,6 +26,7 @@ namespace EOPAM_11
             List<Partido> mundial = new List<Partido>();
             List<string> show = new List<string>(); 
             Random rnd = new Random();
+            int puentepozo = 0;
 
             for (int i = 0; i < 4; i++) { 
                 amigos.Add(new Persona(15));
@@ -33,11 +34,12 @@ namespace EOPAM_11
 
             for (int i = 0; i < 20; i++) {
                 mundial.Add(new Partido());
+                mundial[i].pozoAcumulado = puentepozo;
                 mundial[i].Ejecutar(rnd);
 
                 for (int j = 0; j < amigos.Count(); j++) {
                     ((IHumano)amigos[j]).Apostar(rnd, mundial[i]);
-                    show.Add(amigos[j].Mostrar());
+                    show.Add(amigos[j].Mostrar(false));
                 }
 
                 for (int j = 0; j < amigos.Count(); j++)
@@ -53,9 +55,18 @@ namespace EOPAM_11
                 Console.WriteLine($"resultado: {mundial[i].resul}");
                 Console.ReadKey(true);
 
+                puentepozo = mundial[i].pozoAcumulado;
                 Console.Clear();
                 show.Clear();
             }
+
+            for (int i = 0; i < amigos.Count; i++) {
+                show.Add(amigos[i].Mostrar(true));
+            }
+            Console.WriteLine(string.Join("\n", show));
+            Console.WriteLine($"FIN DE LAS APUESTAS");
+            Console.ReadKey(true);
+
         }
     }
 }

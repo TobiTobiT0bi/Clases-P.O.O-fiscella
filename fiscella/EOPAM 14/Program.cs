@@ -10,6 +10,7 @@ namespace EOPAM_14
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

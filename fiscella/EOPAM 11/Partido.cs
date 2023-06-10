@@ -13,7 +13,7 @@ namespace EOPAM_11
 
         public void Ejecutar(Random rnd)
         {
-            resul = $"{rnd.Next(0, 4)} - {rnd.Next(0, 4)}";
+            resul = $"{rnd.Next(0, 3)} - {rnd.Next(0, 3)}";
         }
     }
 }

@@ -23,14 +23,14 @@ namespace EOPAM_11
             if (dinero >= 1)
             {
                 dinero--;
-                apuesta = $"{rnd.Next(0, 4)} - {rnd.Next(0, 4)}";
+                apuesta = $"{rnd.Next(0, 3)} - {rnd.Next(0, 3)}";
                 partido.pozoAcumulado++;
             }
             else {
-                apuesta = "no";
+                apuesta = "dinero insuficiente";
             }
 
-            return apuesta;
+            return $"{apuesta}";
         }
 
         bool IHumano.Comprobar(Partido resul) {
@@ -49,8 +49,12 @@ namespace EOPAM_11
             return ganar;
         }
 
-        public string Mostrar() {
-            return $"dinero: {dinero}, victorias: {victorias}";
+        public string Mostrar(bool yas)
+        {
+            if (yas == true) {
+                return $"dinero: {dinero}, victorias: {victorias}";
+            }
+            return $"dinero: {dinero}, victorias: {victorias}, apuesta: {apuesta}";
         }
     }
 }
