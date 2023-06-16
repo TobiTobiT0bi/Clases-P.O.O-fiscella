@@ -46,7 +46,7 @@ namespace menuTools
             }
         }
 
-        public static int movilidad(int pos, string[] menu, int nivelado = 30)
+        public static int movilidad(string[] menu, int pos = 0, int nivelado = 30)
         {
             while (true)
             {

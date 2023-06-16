@@ -1,0 +1,11 @@
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\bin\Debug\EOPAM 15.exe.config
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\bin\Debug\EOPAM 15.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\bin\Debug\EOPAM 15.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\bin\Debug\menuTools.dll
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\bin\Debug\menuTools.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\obj\Debug\EOPAM 15.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\obj\Debug\EOPAM 15.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\obj\Debug\EOPAM 15.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\obj\Debug\EOPAM 15.csproj.CopyComplete
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\obj\Debug\EOPAM 15.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\EOPAM 15\obj\Debug\EOPAM 15.pdb
