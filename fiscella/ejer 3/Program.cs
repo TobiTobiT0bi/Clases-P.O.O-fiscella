@@ -27,7 +27,7 @@ namespace ejer_3
                     adivinador = Convert.ToInt16(Console.ReadLine());
                     pass = true;
                 }
-                catch (Exception ex)
+                catch
                 {
                     Console.SetCursorPosition(30, 10);
                     Console.WriteLine("escribi un numero valido no seas malo :c");

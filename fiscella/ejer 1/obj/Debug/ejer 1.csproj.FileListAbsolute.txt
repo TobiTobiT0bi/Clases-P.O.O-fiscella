@@ -14,3 +14,11 @@ C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 1\obj\Debug\ejer 1
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 1\obj\Debug\ejer 1.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 1\obj\Debug\ejer 1.exe
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\ejer 1\obj\Debug\ejer 1.pdb
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\ejer 1\bin\Debug\ejer 1.exe.config
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\ejer 1\bin\Debug\ejer 1.exe
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\ejer 1\bin\Debug\ejer 1.pdb
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\ejer 1\obj\Debug\ejer 1.csproj.AssemblyReference.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\ejer 1\obj\Debug\ejer 1.csproj.SuggestedBindingRedirects.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\ejer 1\obj\Debug\ejer 1.csproj.CoreCompileInputs.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\ejer 1\obj\Debug\ejer 1.exe
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\ejer 1\obj\Debug\ejer 1.pdb

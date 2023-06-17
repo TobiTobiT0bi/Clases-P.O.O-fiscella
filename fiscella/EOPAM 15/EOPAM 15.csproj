@@ -33,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="menuTools">
+    <Reference Include="menuTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\menuTools\obj\Debug\menuTools.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -46,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Almacen.cs" />
+    <Compile Include="Azucarada.cs" />
+    <Compile Include="Bebida.cs" />
+    <Compile Include="Mineral.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

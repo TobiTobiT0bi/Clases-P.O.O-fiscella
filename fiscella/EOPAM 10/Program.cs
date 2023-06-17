@@ -108,7 +108,7 @@ namespace EOPAM_10
 
             while (true)
             {
-                int seleccion = Menu.movilidad(pos, menu, 30);
+                int seleccion = Menu.movilidad(menu, pos);
                 bool salir = false;
 
                 switch (seleccion)

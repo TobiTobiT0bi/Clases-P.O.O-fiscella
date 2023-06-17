@@ -9,3 +9,14 @@ C:\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercic
 C:\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios con formularios 1.csproj.CoreCompileInputs.cache
 C:\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios con formularios 1.exe
 C:\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios con formularios 1.pdb
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\bin\Debug\Ejercicios con formularios 1.exe.config
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\bin\Debug\Ejercicios con formularios 1.exe
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\bin\Debug\Ejercicios con formularios 1.pdb
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios con formularios 1.csproj.AssemblyReference.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios con formularios 1.csproj.SuggestedBindingRedirects.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios_con_formularios_1.Form1.resources
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios_con_formularios_1.Properties.Resources.resources
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios con formularios 1.csproj.GenerateResource.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios con formularios 1.csproj.CoreCompileInputs.cache
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios con formularios 1.exe
+C:\Users\tobia\OneDrive\Documentos\GitHub\Clases-P.O.O-fiscella\fiscella\Ejercicios con formularios 1\obj\Debug\Ejercicios con formularios 1.pdb

@@ -145,7 +145,7 @@ namespace EOPAM_1
                     Console.ResetColor();
                 } */
 
-                pos = Menu.movilidad(pos, menuPrincipal);
+                pos = Menu.movilidad(menuPrincipal, pos);
 
                 if (pos == 0)
                 {
@@ -209,7 +209,7 @@ namespace EOPAM_1
                         if (keyc.Key == ConsoleKey.Enter)
                         {*/
 
-                    posCuentas = Menu.movilidad(posCuentas, titulares);
+                    posCuentas = Menu.movilidad(titulares, posCuentas);
 
                     Console.Clear();
                     Console.SetCursorPosition(30, 8);

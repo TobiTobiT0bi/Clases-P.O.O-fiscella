@@ -7,7 +7,7 @@
     <ProjectGuid>{DE3F0A8D-0424-4759-9F0F-1C298081A6FB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>EOPAM_17</RootNamespace>
-    <AssemblyName>EOPAM_17</AssemblyName>
+    <AssemblyName>EOPAM 17</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
