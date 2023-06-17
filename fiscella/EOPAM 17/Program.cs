@@ -30,7 +30,7 @@ La carta número 11 será Jota
 La carta número 12 será Reina
 La carta número 13 será Rey
 La carta número 1 será As
-Si el palo es de tipo PalosBarFrancesa:
+Si el palo es de tipo PalosBarEspañola:
 La carta número 10 será Sota
 La carta número 12 será Caballo
 La carta número 13 será Rey
@@ -39,10 +39,32 @@ La carta número 1 será As
  */
 namespace EOPAM_17
 {
+    enum PalosBarEspañola { OROS, COPAS, ESPADAS, BASTOS }
+    enum PalosBarFrancesa { DIAMANTES, PICAS, CORAZONES, TREBOLES}
+
     internal class Program
     {
         static void Main(string[] args)
         {
+            BarajaEspañola españolaTruco = new BarajaEspañola(true);
+            BarajaEspañola españolaEnvido = new BarajaEspañola();
+
+            BarajaFrancesa segunda = new BarajaFrancesa();
+
+            españolaTruco.crearBaraja();
+            españolaEnvido.crearBaraja();
+            segunda.crearBaraja();
+
+            Console.WriteLine("BARAJA ESPAÑOLA SIN 8 Y 9\n");
+            españolaTruco.mostrarBaraja();
+
+            Console.WriteLine("\n\n\nBARAJA ESPAÑOLA POR DEFECTO\n");
+            españolaEnvido.mostrarBaraja();
+
+            Console.WriteLine("\n\n\nBARAJA FRANCESA\n");
+            segunda.mostrarBaraja();
+
+            Console.ReadKey();
         }
     }
 }

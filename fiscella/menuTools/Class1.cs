@@ -106,5 +106,30 @@ namespace menuTools
                 }
             }
         }
+
+        /// <summary>
+        /// Resetea la consola si bool es true, en caso de no ingresar un booleano, es false, resetea el color y pone el cursor en los valores
+        /// ingresados, en caso de no ingresar valores, lo pone en x = 30 e y = 8
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="clear"></param>
+        public static void resetConsole(int x = 30, int y = 8, bool clear = false) {
+            if (clear) Console.Clear();
+            Console.ResetColor();
+            Console.SetCursorPosition(x, y);
+        }
+
+        /// <summary>
+        /// Resetea la consola si bool es true, resetea el color y pone el cursor en los valores
+        /// predeterminados
+        /// </summary>
+        /// <param name="clear"></param>
+        public static void resetConsole(bool clear)
+        {
+            if (clear) Console.Clear();
+            Console.ResetColor();
+            Console.SetCursorPosition(30, 8);
+        }
     }
 }
