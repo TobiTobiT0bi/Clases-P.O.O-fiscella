@@ -1,0 +1,11 @@
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\bin\Debug\Formularios 2.exe.config
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\bin\Debug\Formularios 2.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\bin\Debug\Formularios 2.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\obj\Debug\Formularios 2.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\obj\Debug\Formularios 2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\obj\Debug\Formularios_2.Form1.resources
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\obj\Debug\Formularios_2.Properties.Resources.resources
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\obj\Debug\Formularios 2.csproj.GenerateResource.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\obj\Debug\Formularios 2.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\obj\Debug\Formularios 2.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Formularios 2\obj\Debug\Formularios 2.pdb
