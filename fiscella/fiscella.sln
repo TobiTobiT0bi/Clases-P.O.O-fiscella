@@ -89,6 +89,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EOPAM 17", "EOPAM 17\EOPAM 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formularios 2", "Formularios 2\Formularios 2.csproj", "{4F9CD734-37F4-4990-A1AA-16B03FC394EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "editor imagenes", "editor imagenes\editor imagenes.csproj", "{8392D5A7-D24F-47CA-BFA9-DCF04F3E6EB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -239,6 +241,10 @@ Global
 		{4F9CD734-37F4-4990-A1AA-16B03FC394EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F9CD734-37F4-4990-A1AA-16B03FC394EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F9CD734-37F4-4990-A1AA-16B03FC394EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8392D5A7-D24F-47CA-BFA9-DCF04F3E6EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8392D5A7-D24F-47CA-BFA9-DCF04F3E6EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8392D5A7-D24F-47CA-BFA9-DCF04F3E6EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8392D5A7-D24F-47CA-BFA9-DCF04F3E6EB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -280,6 +286,7 @@ Global
 		{ED0AE00B-0CBB-47F4-B297-8AA85D8DDA35} = {1DCDCCEA-65A3-4B43-9015-7F9DF92E6F0B}
 		{DE3F0A8D-0424-4759-9F0F-1C298081A6FB} = {1DCDCCEA-65A3-4B43-9015-7F9DF92E6F0B}
 		{4F9CD734-37F4-4990-A1AA-16B03FC394EF} = {B1163814-1E06-4188-85F4-64D1BB0AF144}
+		{8392D5A7-D24F-47CA-BFA9-DCF04F3E6EB6} = {B1163814-1E06-4188-85F4-64D1BB0AF144}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {797C736E-D5F7-41AD-8D22-3A2D14A0F74E}

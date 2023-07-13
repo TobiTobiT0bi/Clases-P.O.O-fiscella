@@ -1,0 +1,11 @@
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\bin\Debug\editor imagenes.exe.config
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\bin\Debug\editor imagenes.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\bin\Debug\editor imagenes.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\obj\Debug\editor imagenes.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\obj\Debug\editor imagenes.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\obj\Debug\editor_imagenes.Form1.resources
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\obj\Debug\editor_imagenes.Properties.Resources.resources
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\obj\Debug\editor imagenes.csproj.GenerateResource.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\obj\Debug\editor imagenes.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\obj\Debug\editor imagenes.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\editor imagenes\obj\Debug\editor imagenes.pdb
