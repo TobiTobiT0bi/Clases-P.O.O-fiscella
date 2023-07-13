@@ -31,5 +31,10 @@ namespace editor_imagenes
                 }
             }
         }
+
+        private void salir_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¿Salir de la aplicacion?", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+        }
     }
 }

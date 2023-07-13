@@ -33,6 +33,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.archivo = new System.Windows.Forms.OpenFileDialog();
+            this.salir = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +50,8 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.toolStripButton1,
+            this.salir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -69,6 +71,16 @@
             // archivo
             // 
             this.archivo.FileName = "openFileDialog1";
+            // 
+            // salir
+            // 
+            this.salir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.salir.Image = ((System.Drawing.Image)(resources.GetObject("salir.Image")));
+            this.salir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.salir.Name = "salir";
+            this.salir.Size = new System.Drawing.Size(23, 22);
+            this.salir.Text = "toolStripButton2";
+            this.salir.Click += new System.EventHandler(this.salir_Click);
             // 
             // Form1
             // 
@@ -93,6 +105,7 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.OpenFileDialog archivo;
+        private System.Windows.Forms.ToolStripButton salir;
     }
 }
 
