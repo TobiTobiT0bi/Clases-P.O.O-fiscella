@@ -1,0 +1,11 @@
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\bin\Debug\Reproductor_MP3.exe.config
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\bin\Debug\Reproductor_MP3.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\bin\Debug\Reproductor_MP3.pdb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\obj\Debug\Reproductor MP3.csproj.AssemblyReference.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\obj\Debug\Reproductor MP3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\obj\Debug\Reproductor_MP3.Form1.resources
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\obj\Debug\Reproductor_MP3.Properties.Resources.resources
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\obj\Debug\Reproductor MP3.csproj.GenerateResource.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\obj\Debug\Reproductor MP3.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\obj\Debug\Reproductor_MP3.exe
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\Reproductor MP3\obj\Debug\Reproductor_MP3.pdb

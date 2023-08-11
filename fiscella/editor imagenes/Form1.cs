@@ -17,7 +17,7 @@ namespace editor_imagenes
             InitializeComponent();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void selectImages_Click(object sender, EventArgs e)
         {
             archivo.Filter = "Imagenes JPG|*.jpg|Archivos PDF|*.pdf|Imagenes PNG|*.png";
 
@@ -34,7 +34,12 @@ namespace editor_imagenes
 
         private void salir_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¿Salir de la aplicacion?", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            DialogResult result = MessageBox.Show("¿Salir de la aplicacion?", "SALIR", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.OK)
+            {
+                Application.Exit(); 
+            }
         }
     }
 }
