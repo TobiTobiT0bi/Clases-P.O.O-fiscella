@@ -93,6 +93,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ejercicios miscelaneos en c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reproductor MP3", "Reproductor MP3\Reproductor MP3.csproj", "{A2B2659E-257A-4266-AA57-22C36867D790}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{82F01EAF-98E1-4ED9-96E2-EB671F3AD2FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chess 2", "chess 2\chess 2.csproj", "{965CE87E-FFB4-4FF4-87C3-02E63C294CA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -251,6 +255,10 @@ Global
 		{A2B2659E-257A-4266-AA57-22C36867D790}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2B2659E-257A-4266-AA57-22C36867D790}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2B2659E-257A-4266-AA57-22C36867D790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965CE87E-FFB4-4FF4-87C3-02E63C294CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965CE87E-FFB4-4FF4-87C3-02E63C294CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965CE87E-FFB4-4FF4-87C3-02E63C294CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965CE87E-FFB4-4FF4-87C3-02E63C294CA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -297,6 +305,7 @@ Global
 		{4F9CD734-37F4-4990-A1AA-16B03FC394EF} = {B1163814-1E06-4188-85F4-64D1BB0AF144}
 		{8392D5A7-D24F-47CA-BFA9-DCF04F3E6EB6} = {B1163814-1E06-4188-85F4-64D1BB0AF144}
 		{A2B2659E-257A-4266-AA57-22C36867D790} = {B1163814-1E06-4188-85F4-64D1BB0AF144}
+		{965CE87E-FFB4-4FF4-87C3-02E63C294CA7} = {82F01EAF-98E1-4ED9-96E2-EB671F3AD2FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {797C736E-D5F7-41AD-8D22-3A2D14A0F74E}
