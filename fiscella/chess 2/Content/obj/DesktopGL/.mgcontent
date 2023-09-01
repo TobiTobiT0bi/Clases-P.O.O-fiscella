@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/background_music.mp3</File>
+    <File>C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/manzana.png</File>
+    <File>C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/prueba.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

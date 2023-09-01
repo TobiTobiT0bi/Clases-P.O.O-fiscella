@@ -4,11 +4,13 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Alumno/Documents/Clases-P.O.O-fiscella/fiscella/chess 2/Content/background_music.mp3</File>
-    <File>C:/Users/Alumno/Documents/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/manzana.png</File>
-    <File>C:/Users/Alumno/Documents/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/prueba.png</File>
+    <File>C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/background_music.mp3</File>
+    <File>C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/manzana.png</File>
+    <File>C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/prueba.png</File>
+    <File>C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/texto/ganaste.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

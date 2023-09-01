@@ -22,6 +22,9 @@ namespace chess_2
         private Texture2D _manzanaTexture;
         private Vector2 _manzanaPosition;
 
+        private Texture2D _ganasteTexture;
+        private Vector2 _ganastePosition;
+
         private Song _backgroundMusic;
 
         private bool _manzanaTocada = false; // Bandera para controlar si se tocó la manzana
@@ -51,6 +54,10 @@ namespace chess_2
             _manzanaTexture = Content.Load<Texture2D>("img/manzana");
             // (?)
             _manzanaPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - _manzanaTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - _manzanaTexture.Height / 2);
+
+            _ganasteTexture = Content.Load<Texture2D>("texto/ganaste");
+            _ganastePosition = new Vector2(40, 0);
+
 
             _backgroundMusic = Content.Load<Song>("background_music");
             MediaPlayer.Play(_backgroundMusic);
@@ -109,8 +116,13 @@ namespace chess_2
 
             _spriteBatch.Begin();
             _spriteBatch.Draw(_pruebasTexture, _pruebasPosition, Color.White);
-            if(!_manzanaTocada)
+            if (!_manzanaTocada)
+            {
                 _spriteBatch.Draw(_manzanaTexture, _manzanaPosition, Color.White);
+            }
+            else{
+                _spriteBatch.Draw(_ganasteTexture, _ganastePosition, Color.White);
+            }
             _spriteBatch.End();
 
             base.Draw(gameTime);

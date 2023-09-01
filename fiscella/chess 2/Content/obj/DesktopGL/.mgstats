@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/background_music.mp3","C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/background_music.xnb","SongProcessor","SongContent",4823363,134,2,6583245
+"C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/manzana.png","C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/img/manzana.xnb","TextureProcessor","Texture2DContent",8426,14745685,0,3356106
+"C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/prueba.png","C:/Users/Alumno/Documents/tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/img/prueba.xnb","TextureProcessor","Texture2DContent",14836,5914709,0,1009822
