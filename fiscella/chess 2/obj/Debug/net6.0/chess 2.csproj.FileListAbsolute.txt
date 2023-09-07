@@ -61,3 +61,6 @@ C:\Users\Alumno\Documents\tobi\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\
 C:\Users\Alumno\Documents\tobi\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.genruntimeconfig.cache
 C:\Users\Alumno\Documents\tobi\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\ref\chess 2.dll
 C:\Users\Alumno\Documents\tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\texto\ganaste.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\texto\ganaste.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochita.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochitaicono.xnb

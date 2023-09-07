@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Documents\\tobi\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj": {}
+    "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Documents\\tobi\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj": {
+    "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Documents\\tobi\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj",
         "projectName": "chess 2",
-        "projectPath": "C:\\Users\\Alumno\\Documents\\tobi\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj",
+        "projectPath": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Documents\\tobi\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\obj\\",
+        "outputPath": "C:\\Users\\Alumno\\Documents\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
