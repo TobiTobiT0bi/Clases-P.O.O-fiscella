@@ -15,7 +15,7 @@ namespace editor_imagenes
     {
         HistorialImagenes HistorialImagenes = new HistorialImagenes();
         string lastFile;
-        string activeFile;
+        string activeFile = "";
         int position = 0;
 
 
@@ -26,6 +26,7 @@ namespace editor_imagenes
             rotarIzquierda.Visible = false;
             rotarDerecha.Visible = false;
             espejo.Visible = false;
+            zoom.Visible = false;
 
             foreach (Control control in this.Controls) {
                 control.PreviewKeyDown += new PreviewKeyDownEventHandler(Form1_PreviewKeyDown);
@@ -125,16 +126,16 @@ namespace editor_imagenes
             {
                 if (e.KeyValue == (char)Keys.Right && position + 1 < archivos.Items.Count)
                 {
-                    Imagen.Image = Image.FromFile(HistorialImagenes.convertIndexToFile(HistorialImagenes.getIndex(activeFile) + 1));
-                    activeFile = HistorialImagenes.getSafeName(HistorialImagenes.getIndex(activeFile) + 1);
                     position = HistorialImagenes.getIndex(activeFile) + 1;
-
+                    Imagen.Image = Image.FromFile(HistorialImagenes.convertIndexToFile(position));
+                    activeFile = HistorialImagenes.getFileName(position);
                 }
                 if (e.KeyValue == (char)Keys.Left && position > 0)
                 {
-                    Imagen.Image = Image.FromFile(HistorialImagenes.convertIndexToFile(HistorialImagenes.getIndex(activeFile) - 1));
-                    activeFile = HistorialImagenes.getSafeName(HistorialImagenes.getIndex(activeFile) - 1);
-                    position = HistorialImagenes.getIndex(activeFile) - 1;
+                    position = HistorialImagenes.getIndex(activeFile)-1;
+                    Imagen.Image = Image.FromFile(HistorialImagenes.convertIndexToFile(position));
+                    activeFile = HistorialImagenes.getFileName(position);
+                    
 
                 }
             }

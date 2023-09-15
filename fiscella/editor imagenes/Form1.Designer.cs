@@ -39,8 +39,10 @@
             this.historial = new System.Windows.Forms.Button();
             this.Imagen = new System.Windows.Forms.PictureBox();
             this.espejo = new System.Windows.Forms.Button();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // archivo
@@ -52,9 +54,9 @@
             this.archivos.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.archivos.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.archivos.FormattingEnabled = true;
-            this.archivos.Location = new System.Drawing.Point(617, 12);
+            this.archivos.Location = new System.Drawing.Point(634, 11);
             this.archivos.Name = "archivos";
-            this.archivos.Size = new System.Drawing.Size(171, 420);
+            this.archivos.Size = new System.Drawing.Size(396, 420);
             this.archivos.TabIndex = 3;
             this.archivos.SelectedIndexChanged += new System.EventHandler(this.archivos_SelectedIndexChanged);
             // 
@@ -69,7 +71,7 @@
             this.salir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(24, 450);
+            this.toolStrip1.Size = new System.Drawing.Size(24, 449);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -127,7 +129,7 @@
             this.historial.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.historial.BackgroundImage = global::editor_imagenes.Properties.Resources.historial;
             this.historial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.historial.Location = new System.Drawing.Point(753, 12);
+            this.historial.Location = new System.Drawing.Point(995, 11);
             this.historial.Name = "historial";
             this.historial.Size = new System.Drawing.Size(35, 36);
             this.historial.TabIndex = 2;
@@ -159,12 +161,20 @@
             this.espejo.UseVisualStyleBackColor = false;
             this.espejo.Click += new System.EventHandler(this.espejo_Click);
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(-1, 425);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1042, 449);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.espejo);
             this.Controls.Add(this.rotarIzquierda);
             this.Controls.Add(this.rotarDerecha);
@@ -180,6 +190,7 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +208,7 @@
         private System.Windows.Forms.Button rotarDerecha;
         private System.Windows.Forms.Button rotarIzquierda;
         private System.Windows.Forms.Button espejo;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
 
