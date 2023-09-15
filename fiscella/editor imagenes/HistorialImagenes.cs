@@ -30,8 +30,17 @@ namespace editor_imagenes
             return fileName[index]; 
         }
 
+        public int getIndex(string namefile) {
+            return fileName.FindIndex(file => file == namefile);
+        }
+
         public string convertSafeToFile(string Safefile) {
             return fileName[safeName.FindIndex(file => file == Safefile)];
+        }
+
+        public string convertIndexToFile(int index)
+        {
+            return fileName[index];
         }
     }
 }
