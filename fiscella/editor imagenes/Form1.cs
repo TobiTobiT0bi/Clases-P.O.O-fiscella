@@ -14,6 +14,7 @@ namespace editor_imagenes
     public partial class Form1 : Form
     {
         HistorialImagenes HistorialImagenes = new HistorialImagenes();
+        PictureBox caja;
         string lastFile;
         string activeFile = "";
         int position = 0;
@@ -41,6 +42,7 @@ namespace editor_imagenes
             if (archivo.ShowDialog() == DialogResult.OK) {
                 try {
                     Imagen.Image = Image.FromFile(archivo.FileName);
+                    caja.Image = Imagen.Image;
 
                     HistorialImagenes.añadir(archivo);
                     lastFile = archivo.FileName;
@@ -51,6 +53,7 @@ namespace editor_imagenes
                     rotarDerecha.Visible = true;
                     rotarIzquierda.Visible = true;
                     espejo.Visible = true;
+                    zoom.Visible = true;
                 }
                 catch (Exception ex)
                 {
@@ -83,6 +86,8 @@ namespace editor_imagenes
                     activeFile = HistorialImagenes.convertSafeToFile(archivos.SelectedItem.ToString());
                     lastFile = archivo.FileName;
                     position = HistorialImagenes.getIndex(HistorialImagenes.convertSafeToFile(archivos.SelectedItem.ToString()));
+
+                    caja.Image = Imagen.Image;
                 }
             }
             catch (Exception ex)
@@ -98,6 +103,7 @@ namespace editor_imagenes
             i.RotateFlip(RotateFlipType.Rotate270FlipXY);
 
             Imagen.Image = i;
+            caja.Image = Imagen.Image;
 
             // ordenen las cartas ustedes ahora, imbeciles
         }
@@ -109,6 +115,7 @@ namespace editor_imagenes
             i.RotateFlip(RotateFlipType.Rotate90FlipXY);
 
             Imagen.Image = i;
+            caja.Image = Imagen.Image;
         }
 
         private void espejo_Click(object sender, EventArgs e)
@@ -118,6 +125,7 @@ namespace editor_imagenes
             i.RotateFlip(RotateFlipType.Rotate180FlipY);
 
             Imagen.Image = i;
+            caja.Image = Imagen.Image;
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -129,14 +137,16 @@ namespace editor_imagenes
                     position = HistorialImagenes.getIndex(activeFile) + 1;
                     Imagen.Image = Image.FromFile(HistorialImagenes.convertIndexToFile(position));
                     activeFile = HistorialImagenes.getFileName(position);
+
+                    caja.Image = Imagen.Image;
                 }
                 if (e.KeyValue == (char)Keys.Left && position > 0)
                 {
                     position = HistorialImagenes.getIndex(activeFile)-1;
                     Imagen.Image = Image.FromFile(HistorialImagenes.convertIndexToFile(position));
                     activeFile = HistorialImagenes.getFileName(position);
-                    
 
+                    caja.Image = Imagen.Image;
                 }
             }
             catch (Exception ex)
@@ -149,6 +159,38 @@ namespace editor_imagenes
         {
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right) { 
                 e.IsInputKey = true;
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            zoom.Minimum = 1;
+            zoom.Maximum = 6;
+            zoom.SmallChange = 1;
+            zoom.LargeChange = 1;
+            zoom.UseWaitCursor = false;
+
+            this.DoubleBuffered = true;
+            caja = new PictureBox();
+            caja.Image = Imagen.Image;
+        }
+
+        
+
+        Image zoomPicture(Image img, Size size) {
+            Bitmap bm = new Bitmap(img, Convert.ToInt32(img.Width*size.Width), Convert.ToInt32(img.Height*size.Height));
+            Graphics gpu = Graphics.FromImage(bm);
+
+            gpu.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+            return bm;
+
+        }
+
+        private void zoom_Scroll(object sender, EventArgs e)
+        {
+            if (zoom.Value != 0) {
+                Imagen.Image = null;
+                Imagen.Image = zoomPicture(caja.Image, new Size(zoom.Value, zoom.Value));
             }
         }
     }

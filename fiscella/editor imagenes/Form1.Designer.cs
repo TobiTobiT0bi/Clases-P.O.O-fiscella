@@ -39,10 +39,12 @@
             this.historial = new System.Windows.Forms.Button();
             this.Imagen = new System.Windows.Forms.PictureBox();
             this.espejo = new System.Windows.Forms.Button();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.zoom = new System.Windows.Forms.TrackBar();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoom)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // archivo
@@ -138,10 +140,10 @@
             // 
             // Imagen
             // 
-            this.Imagen.Location = new System.Drawing.Point(109, 12);
+            this.Imagen.Location = new System.Drawing.Point(0, 0);
             this.Imagen.Name = "Imagen";
-            this.Imagen.Size = new System.Drawing.Size(502, 421);
-            this.Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen.Size = new System.Drawing.Size(519, 425);
+            this.Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Imagen.TabIndex = 0;
             this.Imagen.TabStop = false;
             // 
@@ -161,12 +163,22 @@
             this.espejo.UseVisualStyleBackColor = false;
             this.espejo.Click += new System.EventHandler(this.espejo_Click);
             // 
-            // trackBar1
+            // zoom
             // 
-            this.trackBar1.Location = new System.Drawing.Point(-1, 425);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
-            this.trackBar1.TabIndex = 7;
+            this.zoom.Location = new System.Drawing.Point(-1, 425);
+            this.zoom.Name = "zoom";
+            this.zoom.Size = new System.Drawing.Size(104, 45);
+            this.zoom.TabIndex = 7;
+            this.zoom.Scroll += new System.EventHandler(this.zoom_Scroll);
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.Imagen);
+            this.panel1.Location = new System.Drawing.Point(109, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(519, 425);
+            this.panel1.TabIndex = 8;
             // 
             // Form1
             // 
@@ -174,23 +186,26 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1042, 449);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.zoom);
             this.Controls.Add(this.espejo);
             this.Controls.Add(this.rotarIzquierda);
             this.Controls.Add(this.rotarDerecha);
             this.Controls.Add(this.historial);
             this.Controls.Add(this.archivos);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.Imagen);
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form1_PreviewKeyDown);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoom)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,7 +223,8 @@
         private System.Windows.Forms.Button rotarDerecha;
         private System.Windows.Forms.Button rotarIzquierda;
         private System.Windows.Forms.Button espejo;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar zoom;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
