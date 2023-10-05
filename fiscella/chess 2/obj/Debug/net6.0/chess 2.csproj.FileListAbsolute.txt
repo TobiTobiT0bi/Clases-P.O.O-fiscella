@@ -64,3 +64,15 @@ C:\Users\Alumno\Documents\tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\texto\ganaste.xnb
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochita.xnb
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochitaicono.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Bishop.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_King.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Knight.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Pawn.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Queen.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Rook.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Bishop.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_King.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Knight.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Pawn.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Queen.xnb
+C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Rook.xnb

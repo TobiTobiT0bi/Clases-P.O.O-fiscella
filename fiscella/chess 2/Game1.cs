@@ -56,7 +56,7 @@ namespace chess_2
             // Permite calcular los graficos(?)
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             // Carga la textura "pruebas" en la variable.
-            _pruebasTexture = Content.Load<Texture2D>("img/prueba");
+            _pruebasTexture = Content.Load<Texture2D>("img/chess/W_pawn");
             // Define la posición de inicio del sprite "pruebas".
             _pruebasPosition = new Vector2(100, 100);
 
