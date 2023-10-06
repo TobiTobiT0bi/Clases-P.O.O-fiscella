@@ -123,7 +123,7 @@ namespace Examen_Formularios
             NombresIzq.Items[NombresIzq.Items.Count - 1] = nombresDer[1];
             NombresIzq.Items[0] = nombresDer[0];
 
-            NombresDer.Items[NombresDer.Items.Count - 1] = nombresIzq[1];
+            NombresDer.Items[NombresDer.Items.Count - 1] = nombresIzq[1]; //panqueques
             NombresDer.Items[0] = nombresIzq[0];
         }
     }
