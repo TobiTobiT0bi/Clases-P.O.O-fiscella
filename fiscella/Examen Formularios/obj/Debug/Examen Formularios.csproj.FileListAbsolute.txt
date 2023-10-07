@@ -9,3 +9,14 @@ C:\Users\Alumno\Documents\Coman\nuevo no explotado\Clases-P.O.O-fiscella\fiscell
 C:\Users\Alumno\Documents\Coman\nuevo no explotado\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen Formularios.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Documents\Coman\nuevo no explotado\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen Formularios.exe
 C:\Users\Alumno\Documents\Coman\nuevo no explotado\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen Formularios.pdb
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\bin\Debug\Examen Formularios.exe.config
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\bin\Debug\Examen Formularios.exe
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\bin\Debug\Examen Formularios.pdb
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen Formularios.csproj.AssemblyReference.cache
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen Formularios.csproj.SuggestedBindingRedirects.cache
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen_Formularios.Form1.resources
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen_Formularios.Properties.Resources.resources
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen Formularios.csproj.GenerateResource.cache
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen Formularios.csproj.CoreCompileInputs.cache
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen Formularios.exe
+E:\repos\Clases-P.O.O-fiscella\fiscella\Examen Formularios\obj\Debug\Examen Formularios.pdb

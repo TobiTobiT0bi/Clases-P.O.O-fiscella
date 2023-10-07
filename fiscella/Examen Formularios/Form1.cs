@@ -81,7 +81,7 @@ namespace Examen_Formularios
                     {
                         NombresIzq5Letras.Add(NombresIzq.Items[i].ToString());
                         NombresIzq.Items.RemoveAt(i);
-                    }
+                    } 
                 }
                 catch { /*panqueque*/ }
                 try
@@ -119,6 +119,7 @@ namespace Examen_Formularios
         {
             string[] nombresIzq = { NombresIzq.Items[0].ToString(), NombresIzq.Items[NombresIzq.Items.Count - 1].ToString() };
             string[] nombresDer = { NombresDer.Items[0].ToString(), NombresDer.Items[NombresDer.Items.Count - 1].ToString() };
+
 
             NombresIzq.Items[NombresIzq.Items.Count - 1] = nombresDer[1];
             NombresIzq.Items[0] = nombresDer[0];
