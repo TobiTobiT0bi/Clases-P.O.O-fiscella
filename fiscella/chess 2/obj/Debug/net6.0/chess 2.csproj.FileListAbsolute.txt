@@ -76,3 +76,23 @@ C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Pawn.xnb
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Queen.xnb
 C:\Users\Alumno\Documents\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Rook.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Bishop.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_King.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Knight.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Pawn.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Queen.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Rook.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Bishop.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_King.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Knight.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Pawn.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Queen.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Rook.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochita.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochitaicono.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\taverna.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\montañas.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\piso y cosas.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\plataformas.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\montañaFondo.xnb
+C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\PisoPiedra.xnb

@@ -22,6 +22,9 @@ namespace chess_2
         private Texture2D _manzanaTexture;
         private Vector2 _manzanaPosition;
 
+        private Texture2D _pisoTexture;
+        private Vector2 _pisoPosition;
+
         private Texture2D _pochitaTexture;
         private Vector2 _pochitaPosition;
 
@@ -75,6 +78,10 @@ namespace chess_2
             _pochitaIconoTexture = Content.Load<Texture2D>("img/pochitaicono");
             _pochitaIconoPosition = new Vector2(10, 0);
 
+            _pisoTexture = Content.Load<Texture2D>("img/scenes/PisoPiedra");
+            _pisoPosition = new Vector2(0, GraphicsDevice.Viewport.Height - 62);
+
+
 
             _backgroundMusic = Content.Load<Song>("background_music");
             MediaPlayer.Play(_backgroundMusic);
@@ -90,53 +97,50 @@ namespace chess_2
             /*do you believe in*/Gravity();//?
 
             cambiarEscena();
+            // Movimiento del sprite "pruebas" controlado por las flechas del teclado
 
-            // Se ejecuta cuando la variable _manzanaTocada es "false".
-            if (!_manzanaTocada)
-            {
-                // Movimiento del sprite "pruebas" controlado por las flechas del teclado
+            // Cuando se aprieta la tecla "left" se hace la siguiente operación:
+            if (keyboardState.IsKeyDown(Keys.Left))
+                // Se resta la posición actual en "X" por el valor de la velocidad. Si velocidad es 2 se restan 2 posiciones.
+                _pruebasPosition.X -= 6;
 
-                // Cuando se aprieta la tecla "left" se hace la siguiente operación:
-                if (keyboardState.IsKeyDown(Keys.Left))
-                    // Se resta la posición actual en "X" por el valor de la velocidad. Si velocidad es 2 se restan 2 posiciones.
-                    _pruebasPosition.X -= 6;
+            // Cuando se aprieta la tecla "right" se hace la siguiente operación:
+            if (keyboardState.IsKeyDown(Keys.Right))
+                // Se suma la posición actual en "X" por el valor de la velocidad.
+                _pruebasPosition.X += 6;
 
-                // Cuando se aprieta la tecla "right" se hace la siguiente operación:
-                if (keyboardState.IsKeyDown(Keys.Right))
-                    // Se suma la posición actual en "X" por el valor de la velocidad.
-                    _pruebasPosition.X += 6;
+            // Cuando se aprieta la tecla "up" se hace la siguiente operación:
+            if (keyboardState.IsKeyDown(Keys.Up)) {
+                // Se resta la posición actual en "Y" por el valor de la velocidad.
+                Jump();
+            }
 
-                // Cuando se aprieta la tecla "up" se hace la siguiente operación:
-                if (keyboardState.IsKeyDown(Keys.Up)) {
-                    // Se resta la posición actual en "Y" por el valor de la velocidad.
-                    Jump();
+            // Cuando se aprieta la tecla "down" se hace la siguiente operación:
+            if (keyboardState.IsKeyDown(Keys.Down))
+                // Se suma la posición actual en "Y" por el valor de la velocidad.
+                if (_pruebasPosition.Y <= 350) {
+                    _pruebasPosition.Y += 6;
                 }
-
-                // Cuando se aprieta la tecla "down" se hace la siguiente operación:
-                if (keyboardState.IsKeyDown(Keys.Down))
-                    // Se suma la posición actual en "Y" por el valor de la velocidad.
-                    if (_pruebasPosition.Y <= 350) {
-                        _pruebasPosition.Y += 6;
-                    }
                     
 
-                // Verificar colisión con la manzana
-                Rectangle pruebasRectangle = new Rectangle((int)_pruebasPosition.X, (int)_pruebasPosition.Y, _pruebasTexture.Width, _pruebasTexture.Height);
-                // Es la caja de coliciones de "pruebas" y se basa en el tamaño de la imgane.
-                Rectangle manzanaRectangle = new Rectangle((int)_manzanaPosition.X, (int)_manzanaPosition.Y, _manzanaTexture.Width, _manzanaTexture.Height);
-                // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
-                Rectangle pochitaRectangle = new Rectangle((int)_pochitaPosition.X, (int)_pochitaPosition.Y, _pochitaTexture.Width, _pochitaTexture.Height);
-                // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
+            // Verificar colisión con la manzana
+            Rectangle pruebasRectangle = new Rectangle((int)_pruebasPosition.X, (int)_pruebasPosition.Y, _pruebasTexture.Width, _pruebasTexture.Height);
+            // Es la caja de coliciones de "pruebas" y se basa en el tamaño de la imgane.
+            Rectangle manzanaRectangle = new Rectangle((int)_manzanaPosition.X, (int)_manzanaPosition.Y, _manzanaTexture.Width, _manzanaTexture.Height);
+            // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
+            Rectangle pochitaRectangle = new Rectangle((int)_pochitaPosition.X, (int)_pochitaPosition.Y, _pochitaTexture.Width, _pochitaTexture.Height);
+            // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
+            Rectangle pisoRectangle = new Rectangle((int)_pisoPosition.X, (int)_pisoPosition.Y, _pisoTexture.Width, _pisoTexture.Height);
+            // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
 
-                if (pruebasRectangle.Intersects(pochitaRectangle) && escena == "pochita")
-                {
-                    _pochitaTocada = true;
-                }
+            if (pruebasRectangle.Intersects(pochitaRectangle) && escena == "pochita")
+            {
+                _pochitaTocada = true;
+            }
 
-                if (pruebasRectangle.Intersects(manzanaRectangle) && escena == "main" && _pochitaTocada)
-                {
-                    _manzanaTocada = true;
-                }
+            if (pruebasRectangle.Intersects(manzanaRectangle) && escena == "main" && _pochitaTocada)
+            {
+                _manzanaTocada = true;
             }
 
             base.Update(gameTime);
@@ -194,6 +198,7 @@ namespace chess_2
 
             _spriteBatch.Begin();
             _spriteBatch.Draw(_pruebasTexture, _pruebasPosition, Color.White);
+            _spriteBatch.Draw(_pisoTexture, _pisoPosition, Color.White);
 
             if (_pochitaTocada) {
                 _spriteBatch.Draw(_pochitaIconoTexture, _pochitaIconoPosition, Color.White);
