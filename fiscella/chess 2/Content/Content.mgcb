@@ -271,7 +271,7 @@
 /processorParam:TextureFormat=Color
 /build:img/scenes/plataformas.png
 
-#begin img/scenes/taverna.jpg
+#begin img/scenes/taverna.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -281,7 +281,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:img/scenes/taverna.jpg
+/build:img/scenes/taverna.png
 
 #begin texto/ganaste.png
 /importer:TextureImporter

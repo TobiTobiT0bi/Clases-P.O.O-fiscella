@@ -22,6 +22,9 @@ namespace chess_2
         private Texture2D _manzanaTexture;
         private Vector2 _manzanaPosition;
 
+        private Texture2D _fondoTexture;
+        private Vector2 _fondoPosition;
+
         private Texture2D _pisoTexture;
         private Vector2 _pisoPosition;
 
@@ -38,6 +41,7 @@ namespace chess_2
 
         private bool _manzanaTocada = false; // Bandera para controlar si se tocó la manzana
         private bool _pochitaTocada = false;
+        private bool _enPiso = false;
 
         private bool salto = true;
 
@@ -61,12 +65,15 @@ namespace chess_2
             // Carga la textura "pruebas" en la variable.
             _pruebasTexture = Content.Load<Texture2D>("img/chess/W_pawn");
             // Define la posición de inicio del sprite "pruebas".
-            _pruebasPosition = new Vector2(100, 100);
+            _pruebasPosition = new Vector2(100, 1);
 
 
             // Carga las textura "manzana" en la variable.
             _manzanaTexture = Content.Load<Texture2D>("img/manzana");
             _manzanaPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - _manzanaTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - _manzanaTexture.Height / 2);
+
+            _fondoTexture = Content.Load<Texture2D>("img/scenes/taverna");
+            _fondoPosition = new Vector2(0, 0);
 
             // Carga las textura "pochita" en la variable.
             _pochitaTexture = Content.Load<Texture2D>("img/pochita");
@@ -130,7 +137,7 @@ namespace chess_2
             // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
             Rectangle pochitaRectangle = new Rectangle((int)_pochitaPosition.X, (int)_pochitaPosition.Y, _pochitaTexture.Width, _pochitaTexture.Height);
             // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
-            Rectangle pisoRectangle = new Rectangle((int)_pisoPosition.X, (int)_pisoPosition.Y, _pisoTexture.Width, _pisoTexture.Height);
+            Rectangle pisoRectangle = new Rectangle((int)_pisoPosition.X - 125, (int)_pisoPosition.Y, _pisoTexture.Width + 250, _pisoTexture.Height);
             // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
 
             if (pruebasRectangle.Intersects(pochitaRectangle) && escena == "pochita")
@@ -143,6 +150,8 @@ namespace chess_2
                 _manzanaTocada = true;
             }
 
+            _enPiso = pruebasRectangle.Intersects(pisoRectangle);
+
             base.Update(gameTime);
         }
 
@@ -153,12 +162,14 @@ namespace chess_2
             {
                 escena = "pochita";
                 _pruebasPosition.X = 800;
+                _pruebasPosition.Y = 340;
             }
 
             if (_pruebasPosition.X > 800 && escena == "pochita")
             {
                 escena = "main";
                 _pruebasPosition.X = -125;
+                _pruebasPosition.Y = 100;
             }
 
             
@@ -170,6 +181,7 @@ namespace chess_2
             {
                 if (salto == true)
                 {
+                    _enPiso = false;
                     _pruebasPosition.Y -= 30;
                 }
             }
@@ -181,9 +193,9 @@ namespace chess_2
 
         private void Gravity()
         {
-            if (_pruebasPosition.Y <= 350)
+            if (!_enPiso)
             {
-                _pruebasPosition.Y += 15;
+                _pruebasPosition.Y += 1;
             }
             if (_pruebasPosition.Y >= 350)
             {
@@ -197,6 +209,7 @@ namespace chess_2
             // Limpia 20 veces por segundo la imagen.
 
             _spriteBatch.Begin();
+            _spriteBatch.Draw(_fondoTexture, _fondoPosition, Color.White);
             _spriteBatch.Draw(_pruebasTexture, _pruebasPosition, Color.White);
             _spriteBatch.Draw(_pisoTexture, _pisoPosition, Color.White);
 
