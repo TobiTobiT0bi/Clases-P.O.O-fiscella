@@ -4,14 +4,54 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Alumno/Documents/Clases-P.O.O-fiscella/fiscella/chess 2/Content/background_music.mp3</File>
-    <File>C:/Users/Alumno/Documents/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/manzana.png</File>
-    <File>C:/Users/Alumno/Documents/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochita.png</File>
-    <File>C:/Users/Alumno/Documents/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochitaicono.png</File>
-    <File>C:/Users/Alumno/Documents/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/prueba.png</File>
-    <File>C:/Users/Alumno/Documents/Clases-P.O.O-fiscella/fiscella/chess 2/Content/texto/ganaste.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/background_music.mp3</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Bishop.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_King.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Knight.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Pawn.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Queen.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Rook.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Bishop.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_King.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Knight.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Pawn.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Queen.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Rook.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/manzana.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochita.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochitaicono.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/prueba.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/montañaFondo.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/montañas.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/piso y cosas.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/PisoPiedra.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/plataformaChica.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/plataformaGrande.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/plataformas.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/taverna.png</File>
+    <File>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/texto/ganaste.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
