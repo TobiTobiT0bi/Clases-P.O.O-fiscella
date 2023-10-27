@@ -29,6 +29,11 @@ namespace chess_2
         private Vector2 _pisoPosition;
 
         private Plataforma plataforma1;
+        private Plataforma plataforma2;
+
+        private List<Plataforma> plataformas = new List<Plataforma>();
+
+        private Texture2D _pixelTexture;
 
         private Texture2D _pochitaTexture;
         private Vector2 _pochitaPosition;
@@ -44,11 +49,19 @@ namespace chess_2
         private bool _manzanaTocada = false; // Bandera para controlar si se tocó la manzana
         private bool _pochitaTocada = false;
         private bool _enPiso = false;
+        float limite;
+        float framesSalto = 250;
 
         private bool salto = true;
 
         private string escena = "main";
- 
+
+        Rectangle pisoRectangle;
+        Rectangle peonRectangleBody;
+        Rectangle manzanaRectangle;
+        Rectangle pochitaRectangle;
+
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -70,10 +83,17 @@ namespace chess_2
             // Carga la textura "pruebas" en la variable.
             _pruebasTexture = Content.Load<Texture2D>("img/chess/W_pawn");
             // Define la posición de inicio del sprite "pruebas".
-            _pruebasPosition = new Vector2(100, 310);
+            _pruebasPosition = new Vector2(100, 300);
 
             plataforma1 = new Plataforma("plataformaGrande", 120, 350);
-         
+            plataforma2 = new Plataforma("plataformaGrande", 520, 350);
+
+            plataformas.Add(plataforma1);
+            plataformas.Add(plataforma2);
+
+            //pixel 1x1 para debug
+            _pixelTexture = new Texture2D(GraphicsDevice, 1, 1); _pixelTexture.SetData(new[] { Color.White });
+
             // Carga las textura "manzana" en la variable.
             _manzanaTexture = Content.Load<Texture2D>("img/manzana");
             _manzanaPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - _manzanaTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - _manzanaTexture.Height / 2);
@@ -106,7 +126,10 @@ namespace chess_2
 
             /*do you believe in*/Gravity();//?
 
-            plataforma1.LoadContent(Content);
+            for (int i = 0; i < plataformas.Count; i++) {
+                plataformas[i].LoadContent(Content);
+            }
+            
 
             cambiarEscena();
             // Movimiento del sprite "pruebas" controlado por las flechas del teclado
@@ -124,7 +147,7 @@ namespace chess_2
             // Cuando se aprieta la tecla "up" se hace la siguiente operación:
             if (keyboardState.IsKeyDown(Keys.Up)) {
                 // Se resta la posición actual en "Y" por el valor de la velocidad.
-                Jump();
+                Jump(limite);
             }
 
             // Cuando se aprieta la tecla "down" se hace la siguiente operación:
@@ -136,32 +159,37 @@ namespace chess_2
 
             
             // Verificar colisión con la manzana
-            Rectangle pruebasRectangle = new Rectangle((int)_pruebasPosition.X, (int)_pruebasPosition.Y, _pruebasTexture.Width, _pruebasTexture.Height);
+            peonRectangleBody = new Rectangle((int)_pruebasPosition.X, (int)_pruebasPosition.Y, _pruebasTexture.Width, _pruebasTexture.Height);
+
+
             // Es la caja de coliciones de "pruebas" y se basa en el tamaño de la imgane.
-            Rectangle manzanaRectangle = new Rectangle((int)_manzanaPosition.X, (int)_manzanaPosition.Y, _manzanaTexture.Width, _manzanaTexture.Height);
+            manzanaRectangle = new Rectangle((int)_manzanaPosition.X, (int)_manzanaPosition.Y, _manzanaTexture.Width, _manzanaTexture.Height);
             // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
-            Rectangle pochitaRectangle = new Rectangle((int)_pochitaPosition.X, (int)_pochitaPosition.Y, _pochitaTexture.Width, _pochitaTexture.Height);
+            pochitaRectangle = new Rectangle((int)_pochitaPosition.X, (int)_pochitaPosition.Y, _pochitaTexture.Width, _pochitaTexture.Height);
             // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
-            Rectangle pisoRectangle = new Rectangle((int)_pisoPosition.X - 125, (int)_pisoPosition.Y, _pisoTexture.Width + 250, _pisoTexture.Height);
+            pisoRectangle = new Rectangle((int)_pisoPosition.X - 125, (int)_pisoPosition.Y, _pisoTexture.Width + 250, _pisoTexture.Height);
             // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
 
-            Rectangle plataformaRectangle = new Rectangle((int)plataforma1._Position.X, (int)plataforma1._Position.Y, plataforma1._Texture.Width, plataforma1._Texture.Height);
+            for (int i = 0; i < plataformas.Count; i++) {
+                plataformas[i].Rectangulo();
+            }
 
-            if (pruebasRectangle.Intersects(pochitaRectangle) && escena == "pochita")
+            if (peonRectangleBody.Intersects(pochitaRectangle) && escena == "pochita")
             {
                 _pochitaTocada = true;
             }
 
-            if (pruebasRectangle.Intersects(manzanaRectangle) && escena == "main" && _pochitaTocada)
+            if (peonRectangleBody.Intersects(manzanaRectangle) && escena == "main" && _pochitaTocada)
             {
                 _manzanaTocada = true;
             }
 
-            if (pisoRectangle.Intersects(plataformaRectangle)) { 
-                _enPiso = true;
+            if (escena == "pochita") {
+                _enPiso = IntersectsPlatform(plataformas, peonRectangleBody);
             }
 
-            if (pruebasRectangle.Intersects(pisoRectangle)) {
+            if (peonRectangleBody.Intersects(pisoRectangle)) {
+                UpdateLimite();
                 _enPiso = true;
             }
             
@@ -169,6 +197,21 @@ namespace chess_2
             base.Update(gameTime);
         }
 
+        public void UpdateLimite() {
+            limite = _pruebasPosition.Y - framesSalto;
+        }
+
+        private bool IntersectsPlatform(List<Plataforma> plataformasLista, Rectangle pruebasRectangle) {
+            for (int i = 0; i < plataformasLista.Count; i++) {
+                if (pruebasRectangle.Intersects(plataformasLista[i]._Bounds)) {
+                    _pruebasPosition.Y = plataformasLista[i]._Position.Y - _pruebasTexture.Height + 7;
+                    UpdateLimite();
+                    return true;
+                }
+            }
+
+            return false;
+        }
 
         private void cambiarEscena() {
 
@@ -176,21 +219,25 @@ namespace chess_2
             {
                 escena = "pochita";
                 _pruebasPosition.X = 900;
-                _pruebasPosition.Y = 340;
+                _pruebasPosition.Y = 328;
+                _enPiso = false;
             }
 
             if (_pruebasPosition.X > 900 && escena == "pochita") {
                 escena = "main";
                 _pruebasPosition.X = -125;
-                _pruebasPosition.Y = 265;
+                _pruebasPosition.Y = 285;
+                _enPiso = false;
             }
 
             
         }
 
-        private void Jump()
+        private void Jump(float limite)
         {
-            if (_pruebasPosition.Y >= 200)
+            
+
+            if (_pruebasPosition.Y >= limite)
             {
                 if (salto == true)
                 {
@@ -214,6 +261,16 @@ namespace chess_2
             {
                 salto = true;
             }
+        }
+
+        public void Debug(SpriteBatch spriteBatch) {
+            if (escena == "pochita") {
+                spriteBatch.Draw(_pixelTexture, plataformas[1]._Bounds, Color.White * 0.3f);
+                spriteBatch.Draw(_pixelTexture, plataformas[0]._Bounds, Color.White * 0.3f);
+                spriteBatch.Draw(_pixelTexture, pochitaRectangle, Color.White * 0.3f);
+            }
+            spriteBatch.Draw(_pixelTexture, pisoRectangle, Color.White * 0.3f);
+            spriteBatch.Draw(_pixelTexture, peonRectangleBody, Color.White * 0.3f);
         }
 
         protected override void Draw(GameTime gameTime)
@@ -245,9 +302,15 @@ namespace chess_2
                     _spriteBatch.Draw(_pochitaTexture, _pochitaPosition, Color.White);
                 }
 
-                _spriteBatch.Draw(plataforma1._Texture, plataforma1._Position, Color.White);
+                for (int i = 0; i < plataformas.Count; i++) {
+                    plataformas[i].Dibujo(_spriteBatch);
+                }
 
+                
             }
+
+            Debug(_spriteBatch);
+
             _spriteBatch.End();
 
             base.Draw(gameTime);

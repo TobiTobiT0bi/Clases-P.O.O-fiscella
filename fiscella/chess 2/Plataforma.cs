@@ -19,6 +19,7 @@ namespace chess_2
 
         public Texture2D _Texture;
         public Vector2 _Position;
+        public Rectangle _Bounds;
 
         public Plataforma(string nombre, int x = 0, int y = 0) { 
             this.nombre = nombre;
@@ -31,6 +32,18 @@ namespace chess_2
         {
             _Texture = content.Load<Texture2D>($"img/scenes/{nombre}");
             _Position = new Vector2(x, y);
+        }
+
+        public void Dibujo(SpriteBatch spriteBach) { 
+            //spriteBach.Begin();
+
+            spriteBach.Draw(_Texture, _Position, Color.White);
+
+            //spriteBach.End();
+        }
+
+        public void Rectangulo() { 
+            _Bounds = new Rectangle((int)_Position.X, (int)_Position.Y, _Texture.Width, _Texture.Height);
         }
     }
 }
