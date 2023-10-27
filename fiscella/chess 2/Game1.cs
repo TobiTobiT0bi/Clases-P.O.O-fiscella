@@ -233,21 +233,16 @@ namespace chess_2
             
         }
 
-        private void Jump(float limite)
-        {
-            
-
-            if (_pruebasPosition.Y >= limite)
-            {
-                if (salto == true)
-                {
+        private void Jump(float limite) {
+            if (_pruebasPosition.Y >= limite) {
+                if (salto == true) {
                     _enPiso = false;
                     _pruebasPosition.Y -= 30;
                 }
             }
             else
             {
-                salto = false; 
+                salto = false;
             }
         }
 
@@ -305,8 +300,6 @@ namespace chess_2
                 for (int i = 0; i < plataformas.Count; i++) {
                     plataformas[i].Dibujo(_spriteBatch);
                 }
-
-                
             }
 
             Debug(_spriteBatch);
