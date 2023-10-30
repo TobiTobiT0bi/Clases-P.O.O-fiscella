@@ -7,12 +7,14 @@ using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using chess_2.Managers;
 
 namespace chess_2.Objetos
 {
     internal class Prota : Sprite
     {
-        private const float SPEED = 750f;
+        private const float SPEED = 550f;
+        private const float RUNNING = 1.5f;
         private const float GRAVITY = 5000f;
         private const float JUMP = 1500f;
         private Vector2 _velocidad;
@@ -27,11 +29,23 @@ namespace chess_2.Objetos
 
             if (teclao.IsKeyDown(Keys.Left))
             {
-                _velocidad.X = -SPEED;
+                if (teclao.IsKeyDown(Keys.LeftShift))
+                {
+                    _velocidad.X = -SPEED * RUNNING;
+                }
+                else {
+                    _velocidad.X = -SPEED;
+                }
             }
             else if (teclao.IsKeyDown(Keys.Right))
             {
-                _velocidad.X = SPEED;
+                if (teclao.IsKeyDown(Keys.LeftShift))
+                {
+                    _velocidad.X = SPEED * RUNNING;
+                }
+                else {
+                    _velocidad.X = SPEED;
+                }           
             }
             else {
                 _velocidad.X = 0;
@@ -45,6 +59,10 @@ namespace chess_2.Objetos
                 _velocidad.Y = -JUMP;
                 _OnGround = false;
             }
+        }
+
+        private void UpdatePosition() { 
+            
         }
 
         public void Update() {

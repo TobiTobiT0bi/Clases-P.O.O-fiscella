@@ -170,13 +170,6 @@ E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\man
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochita.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochitaicono.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\prueba.xnb
-E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\montañaFondo.xnb
-E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\montañas.xnb
-E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\piso y cosas.xnb
-E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\PisoPiedra.xnb
-E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\plataformaChica.xnb
-E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\plataformaGrande.xnb
-E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\plataformas.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\taverna.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\texto\ganaste.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\chess 2.exe
@@ -204,3 +197,10 @@ E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\refint\chess 2.
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.pdb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.genruntimeconfig.cache
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\ref\chess 2.dll
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\montañaFondo.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\montañas.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\piso y cosas.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\PisoPiedra.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\plataformaChica.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\plataformaGrande.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\plataformas.xnb

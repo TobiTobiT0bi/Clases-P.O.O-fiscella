@@ -13,6 +13,10 @@ namespace chess_2.Objetos
         public Texture2D Texture { get; }
         public Vector2 Position;
 
+        public Sprite(Vector2 position) { 
+            Position = position;
+        }
+
         public Sprite(Texture2D texture, Vector2 position)
         {
             Texture = texture;
