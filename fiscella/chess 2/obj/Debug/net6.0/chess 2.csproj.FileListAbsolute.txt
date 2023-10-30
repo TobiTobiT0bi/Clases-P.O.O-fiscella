@@ -150,3 +150,57 @@ C:\Users\Alumno\Documents\Coman\nuevo no explotado\Clases-P.O.O-fiscella\fiscell
 C:\Users\Alumno\Documents\Coman\nuevo no explotado\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\ref\chess 2.dll
 C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\plataformaChica.xnb
 C:\Users\Alumno\Documents\Tobi\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\plataformaGrande.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\manzana.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\prueba.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\background_music.ogg
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\background_music.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Bishop.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_King.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Knight.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Pawn.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Queen.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\B_Rook.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Bishop.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_King.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Knight.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Pawn.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Queen.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\Chess\W_Rook.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\manzana.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochita.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochitaicono.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\prueba.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\montañaFondo.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\montañas.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\piso y cosas.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\PisoPiedra.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\plataformaChica.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\plataformaGrande.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\plataformas.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\taverna.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\texto\ganaste.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\chess 2.exe
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\chess 2.deps.json
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\chess 2.runtimeconfig.json
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\chess 2.dll
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\chess 2.pdb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\MonoGame.Framework.dll
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\runtimes\linux-x64\native\libopenal.so.1
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\runtimes\osx\native\libSDL2.dylib
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\runtimes\osx\native\libopenal.1.dylib
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.csproj.AssemblyReference.cache
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.AssemblyInfoInputs.cache
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.AssemblyInfo.cs
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.csproj.CoreCompileInputs.cache
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.csproj.CopyComplete
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.dll
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\refint\chess 2.dll
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.pdb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.genruntimeconfig.cache
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\ref\chess 2.dll

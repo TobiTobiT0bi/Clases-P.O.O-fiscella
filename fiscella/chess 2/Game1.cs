@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using System.Collections.Generic;
 using System;
+using chess_2.Managers;
 
 namespace chess_2
 {
@@ -12,12 +13,8 @@ namespace chess_2
         private GraphicsDeviceManager _graphics;
         // Encarga de dibujar las texturas en pantalla.
         private SpriteBatch _spriteBatch;
-        // Crea la variable de textura 2D "pruebas".
-        private Texture2D _pruebasTexture;
-        // Crea la variable de posición de "pruebas"
-        private Vector2 _pruebasPosition;
-        // Crea la variable de la velocidad en la que se moverá el sprite.
-        private Vector2 _pruebasSpeed = new Vector2(3, 3);
+
+        private GameManager _gameManager;
 
         private Texture2D _manzanaTexture;
         private Vector2 _manzanaPosition;
@@ -44,7 +41,7 @@ namespace chess_2
         private Texture2D _pochitaIconoTexture;
         private Vector2 _pochitaIconoPosition;
 
-        private Song _backgroundMusic;
+        //private Song _backgroundMusic;
 
         private bool _manzanaTocada = false; // Bandera para controlar si se tocó la manzana
         private bool _pochitaTocada = false;
@@ -66,24 +63,28 @@ namespace chess_2
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            //_graphics.IsFullScreen = true;
-            _graphics.PreferredBackBufferWidth = 800;
-            _graphics.PreferredBackBufferHeight = 600;
+            _graphics.PreferredBackBufferWidth = Globals.WindowSize.X;
+            _graphics.PreferredBackBufferHeight = Globals.WindowSize.Y;
         }
 
         protected override void Initialize()
         {
+            Globals.WindowSize = new(800, 600);
+
+            Globals.Content = Content;
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
+            Globals.SpriteBatch = new SpriteBatch(GraphicsDevice);
+            Globals.GraphicsDevice = GraphicsDevice;
+
+            _gameManager = new GameManager();
+
             // Permite calcular los graficos(?)
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             // Carga la textura "pruebas" en la variable.
-            _pruebasTexture = Content.Load<Texture2D>("img/chess/W_pawn");
-            // Define la posición de inicio del sprite "pruebas".
-            _pruebasPosition = new Vector2(100, 300);
 
             plataforma1 = new Plataforma("plataformaGrande", 120, 350);
             plataforma2 = new Plataforma("plataformaGrande", 520, 350);
@@ -114,8 +115,8 @@ namespace chess_2
             _pisoTexture = Content.Load<Texture2D>("img/scenes/PisoPiedra");
             _pisoPosition = new Vector2(0, GraphicsDevice.Viewport.Height - 62);
 
-            _backgroundMusic = Content.Load<Song>("background_music");
-            MediaPlayer.Play(_backgroundMusic);
+            //_backgroundMusic = Content.Load<Song>("background_music");
+            //MediaPlayer.Play(_backgroundMusic);
             MediaPlayer.IsRepeating = true;
         }
 
@@ -124,17 +125,15 @@ namespace chess_2
             // Se utiliza para poder recibir el estado del teclado.
             KeyboardState keyboardState = Keyboard.GetState();
 
-            /*do you believe in*/Gravity();//?
+            /*do you believe inGravity();//? */
 
             for (int i = 0; i < plataformas.Count; i++) {
                 plataformas[i].LoadContent(Content);
             }
-            
-
-            cambiarEscena();
+           
             // Movimiento del sprite "pruebas" controlado por las flechas del teclado
 
-            // Cuando se aprieta la tecla "left" se hace la siguiente operación:
+            /* Cuando se aprieta la tecla "left" se hace la siguiente operación:
             if (keyboardState.IsKeyDown(Keys.Left))
                 // Se resta la posición actual en "X" por el valor de la velocidad. Si velocidad es 2 se restan 2 posiciones.
                 _pruebasPosition.X -= 6;
@@ -159,7 +158,7 @@ namespace chess_2
 
             
             // Verificar colisión con la manzana
-            peonRectangleBody = new Rectangle((int)_pruebasPosition.X, (int)_pruebasPosition.Y, _pruebasTexture.Width, _pruebasTexture.Height);
+            peonRectangleBody = new Rectangle((int)_pruebasPosition.X, (int)_pruebasPosition.Y, _pruebasTexture.Width, _pruebasTexture.Height); */
 
 
             // Es la caja de coliciones de "pruebas" y se basa en el tamaño de la imgane.
@@ -192,19 +191,21 @@ namespace chess_2
                 UpdateLimite();
                 _enPiso = true;
             }
-            
+
+            Globals.Update(gameTime);
+            _gameManager.Update();
 
             base.Update(gameTime);
         }
 
         public void UpdateLimite() {
-            limite = _pruebasPosition.Y - framesSalto;
+            //limite = _pruebasPosition.Y - framesSalto;
         }
 
         private bool IntersectsPlatform(List<Plataforma> plataformasLista, Rectangle pruebasRectangle) {
             for (int i = 0; i < plataformasLista.Count; i++) {
                 if (pruebasRectangle.Intersects(plataformasLista[i]._Bounds)) {
-                    _pruebasPosition.Y = plataformasLista[i]._Position.Y - _pruebasTexture.Height + 7;
+                    //_pruebasPosition.Y = plataformasLista[i]._Position.Y - _pruebasTexture.Height + 7;
                     UpdateLimite();
                     return true;
                 }
@@ -213,50 +214,43 @@ namespace chess_2
             return false;
         }
 
-        private void cambiarEscena() {
+        //private void cambiarescena()
+        //{
 
-            if (_pruebasPosition.X <= -125 && escena == "main")
-            {
-                escena = "pochita";
-                _pruebasPosition.X = 900;
-                _pruebasPosition.Y = 328;
-                _enPiso = false;
-            }
+        //    if (_pruebasposition.x <= -125 && escena == "main")
+        //    {
+        //        escena = "pochita";
+        //        _pruebasposition.x = 900;
+        //        _pruebasposition.y = 328;
+        //        _enpiso = false;
+        //    }
 
-            if (_pruebasPosition.X > 900 && escena == "pochita") {
-                escena = "main";
-                _pruebasPosition.X = -125;
-                _pruebasPosition.Y = 285;
-                _enPiso = false;
-            }
+        //    if (_pruebasposition.x > 900 && escena == "pochita")
+        //    {
+        //        escena = "main";
+        //        _pruebasposition.x = -125;
+        //        _pruebasposition.y = 285;
+        //        _enpiso = false;
+        //    }
 
-            
-        }
 
-        private void Jump(float limite) {
-            if (_pruebasPosition.Y >= limite) {
-                if (salto == true) {
-                    _enPiso = false;
-                    _pruebasPosition.Y -= 30;
-                }
-            }
-            else
-            {
-                salto = false;
-            }
-        }
+        //}
 
-        private void Gravity()
-        {
-            if (!_enPiso)
-            {
-                _pruebasPosition.Y += 15;
-            }
-            if (_enPiso)
-            {
-                salto = true;
-            }
-        }
+        //private void jump(float limite)
+        //{
+        //    if (_pruebasposition.y >= limite)
+        //    {
+        //        if (salto == true)
+        //        {
+        //            _enpiso = false;
+        //            _pruebasposition.y -= 30;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        salto = false;
+        //    }
+        //}
 
         public void Debug(SpriteBatch spriteBatch) {
             if (escena == "pochita") {
@@ -275,7 +269,6 @@ namespace chess_2
 
             _spriteBatch.Begin();
             _spriteBatch.Draw(_fondoTexture, _fondoPosition, Color.White);
-            _spriteBatch.Draw(_pruebasTexture, _pruebasPosition, Color.White);
             _spriteBatch.Draw(_pisoTexture, _pisoPosition, Color.White);
 
             if (_pochitaTocada) {
@@ -303,6 +296,8 @@ namespace chess_2
             }
 
             Debug(_spriteBatch);
+
+            _gameManager.Draw();
 
             _spriteBatch.End();
 

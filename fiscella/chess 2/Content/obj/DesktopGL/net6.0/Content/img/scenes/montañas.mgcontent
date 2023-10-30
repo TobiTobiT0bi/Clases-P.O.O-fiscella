@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/montañas.png</SourceFile>
-  <SourceTime>2023-10-27T13:07:57.5690747-03:00</SourceTime>
-  <DestFile>C:/Users/Alumno/Documents/Tobi/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/Content/img/scenes/montañas.xnb</DestFile>
-  <DestTime>2023-10-27T13:12:04.4232379-03:00</DestTime>
+  <SourceFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/montañas.png</SourceFile>
+  <SourceTime>2023-10-27T21:11:14.9231886-03:00</SourceTime>
+  <DestFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/Content/img/scenes/montañas.xnb</DestFile>
+  <DestTime>2023-10-30T01:35:37.5025456-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
