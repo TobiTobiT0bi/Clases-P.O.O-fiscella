@@ -170,7 +170,6 @@ E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\man
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochita.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\pochitaicono.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\prueba.xnb
-E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\taverna.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\texto\ganaste.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\chess 2.exe
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\chess 2.deps.json
@@ -204,3 +203,10 @@ E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\sce
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\plataformaChica.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\plataformaGrande.xnb
 E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\plataformas.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\PisoMadera.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\parque.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\chessboard.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\grass tileset.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\plataformaLargaGrass.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\elementos\plataformaChicaGrass.xnb
+E:\repos\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\scenes\panqueque.xnb

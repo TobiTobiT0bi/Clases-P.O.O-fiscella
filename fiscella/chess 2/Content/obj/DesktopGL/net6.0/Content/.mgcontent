@@ -21,17 +21,29 @@
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochita.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochitaicono.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/prueba.png</File>
+    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/chessboard.png</File>
+    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/grass tileset.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/montañaFondo.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/montañas.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/piso y cosas.png</File>
+    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/PisoMadera.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/PisoPiedra.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaChica.png</File>
+    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaChicaGrass.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaGrande.png</File>
+    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaLargaGrass.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformas.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/taverna.png</File>
+    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/panqueque.png</File>
+    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/parque.png</File>
     <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/texto/ganaste.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

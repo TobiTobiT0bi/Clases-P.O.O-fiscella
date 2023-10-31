@@ -211,6 +211,30 @@
 /processorParam:TextureFormat=Color
 /build:img/prueba.png
 
+#begin img/scenes/elementos/chessboard.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/scenes/elementos/chessboard.png
+
+#begin img/scenes/elementos/grass tileset.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/scenes/elementos/grass tileset.png
+
 #begin img/scenes/elementos/montañaFondo.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -247,6 +271,18 @@
 /processorParam:TextureFormat=Color
 /build:img/scenes/elementos/piso y cosas.png
 
+#begin img/scenes/elementos/PisoMadera.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/scenes/elementos/PisoMadera.png
+
 #begin img/scenes/elementos/PisoPiedra.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -271,6 +307,18 @@
 /processorParam:TextureFormat=Color
 /build:img/scenes/elementos/plataformaChica.png
 
+#begin img/scenes/elementos/plataformaChicaGrass.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/scenes/elementos/plataformaChicaGrass.png
+
 #begin img/scenes/elementos/plataformaGrande.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -282,6 +330,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:img/scenes/elementos/plataformaGrande.png
+
+#begin img/scenes/elementos/plataformaLargaGrass.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/scenes/elementos/plataformaLargaGrass.png
 
 #begin img/scenes/elementos/plataformas.png
 /importer:TextureImporter
@@ -295,7 +355,7 @@
 /processorParam:TextureFormat=Color
 /build:img/scenes/elementos/plataformas.png
 
-#begin img/scenes/taverna.png
+#begin img/scenes/panqueque.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -305,7 +365,19 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:img/scenes/taverna.png
+/build:img/scenes/panqueque.png
+
+#begin img/scenes/parque.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/scenes/parque.png
 
 #begin texto/ganaste.png
 /importer:TextureImporter

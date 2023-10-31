@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System;
 using chess_2.Managers;
 using chess_2.Objetos;
+using chess_2.Escenas;
 
 namespace chess_2
 {
@@ -24,10 +25,12 @@ namespace chess_2
         protected override void Initialize()
         {
             Globals.WindowSize = new(800, 600);
+            Globals.Debug = true;
             _graphics.PreferredBackBufferWidth = Globals.WindowSize.X;
             _graphics.PreferredBackBufferHeight = Globals.WindowSize.Y;
             _graphics.ApplyChanges();
 
+            Globals.SceneRectangles = new();
             Globals.Content = Content;
             base.Initialize();
         }
@@ -36,14 +39,13 @@ namespace chess_2
         {
             Globals.SpriteBatch = new SpriteBatch(GraphicsDevice);
             Globals.GraphicsDevice = GraphicsDevice;
-            Globals.Scene = "taverna";
 
             _gameManager = new GameManager();
+            _gameManager._SceneManager.LoadScene(new Parque());
         }
 
         protected override void Update(GameTime gameTime)
         {
-            // Se utiliza para poder recibir el estado del teclado.
             KeyboardState keyboardState = Keyboard.GetState();
 
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape)) {
@@ -56,12 +58,9 @@ namespace chess_2
             base.Update(gameTime);
         }
 
-   
-
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            // Limpia 20 veces por segundo la imagen.
           
             _gameManager.Draw();
 

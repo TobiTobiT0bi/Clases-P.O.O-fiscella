@@ -13,14 +13,15 @@ namespace chess_2.Managers
     internal class GameManager
     {
         private readonly FondoManager _Wallpapermanager;
+        public SceneManager _SceneManager { get; }
 
         private readonly Prota _protagonista;
-        private readonly TestDebug _debugScene;
         
         public GameManager() {
             _protagonista = new(Globals.Content.Load<Texture2D>("img/chess/W_pawn"), new(Globals.WindowSize.X / 2, Globals.WindowSize.Y - Globals.Content.Load<Texture2D>("img/chess/W_pawn").Height - Globals.Content.Load<Texture2D>("img/scenes/elementos/PisoPiedra").Height));            
             _Wallpapermanager = new();
-            _debugScene = new();
+            _SceneManager = new();
+            _SceneManager.LoadScene(new TestDebug());
         }
 
         public void Update()
@@ -34,10 +35,26 @@ namespace chess_2.Managers
             Globals.SpriteBatch.Begin();
 
             _Wallpapermanager.Draw();
+            _SceneManager.BackgroundDraw();
+
             _protagonista.Draw();
-            _debugScene.Draw();
+            _SceneManager.Draw();
+            if (Globals.Debug) {
+                Debug();
+            }
 
             Globals.SpriteBatch.End();
+        }
+
+        public void Debug() {
+            Texture2D pixel = new Texture2D(Globals.GraphicsDevice, 1, 1);
+            pixel.SetData(new[] { Color.White });
+
+            foreach (Rectangle rect in Globals.SceneRectangles) {
+                Globals.SpriteBatch.Draw(pixel, rect, Color.White * 0.5f);
+            }
+
+            Globals.SpriteBatch.Draw(pixel, new Rectangle((int)_protagonista.Position.X, (int)_protagonista.Position.Y, _protagonista.Texture.Width, _protagonista.Texture.Height), Color.White * 0.5f);
         }
     }
 }

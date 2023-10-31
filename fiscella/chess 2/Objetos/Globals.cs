@@ -18,6 +18,11 @@ namespace chess_2.Objetos
         public static Point WindowSize { get; set; }
         public static string Scene { get; set; }
 
+
+        public static List<Rectangle> SceneRectangles { get; set; }
+
+        public static bool Debug { get; set; } 
+
         public static void Update(GameTime gt)
         {
             Time = (float)gt.ElapsedGameTime.TotalSeconds;
