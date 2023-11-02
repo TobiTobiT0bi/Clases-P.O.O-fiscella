@@ -25,11 +25,12 @@ namespace chess_2
         protected override void Initialize()
         {
             Globals.WindowSize = new(800, 600);
-            Globals.Debug = true;
+            Globals.Debug = false;
             _graphics.PreferredBackBufferWidth = Globals.WindowSize.X;
             _graphics.PreferredBackBufferHeight = Globals.WindowSize.Y;
             _graphics.ApplyChanges();
 
+            Globals.viewMatrix = new Matrix();
             Globals.SceneRectangles = new();
             Globals.Content = Content;
             base.Initialize();
@@ -52,6 +53,7 @@ namespace chess_2
                 Exit();
             }
 
+            
             Globals.Update(gameTime);
             _gameManager.Update();
 

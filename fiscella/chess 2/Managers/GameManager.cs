@@ -26,13 +26,14 @@ namespace chess_2.Managers
 
         public void Update()
         {
+            CrearMatriz();
             _protagonista.Update();
             _Wallpapermanager.Update();
         }
 
         public void Draw()
         {
-            Globals.SpriteBatch.Begin();
+            Globals.SpriteBatch.Begin(transformMatrix: Globals.viewMatrix);
 
             _Wallpapermanager.Draw();
             _SceneManager.BackgroundDraw();
@@ -55,6 +56,10 @@ namespace chess_2.Managers
             }
 
             Globals.SpriteBatch.Draw(pixel, new Rectangle((int)_protagonista.Position.X, (int)_protagonista.Position.Y, _protagonista.Texture.Width, _protagonista.Texture.Height), Color.White * 0.5f);
+        }
+
+        public void CrearMatriz() {
+            Globals.viewMatrix = Matrix.CreateTranslation(new Vector3(-_protagonista.Position.X + Globals.WindowSize.X / 2, -_protagonista.Position.Y + (Globals.WindowSize.Y / 2)/* + _protagonista.Position.Y / 4*/, 0));
         }
     }
 }

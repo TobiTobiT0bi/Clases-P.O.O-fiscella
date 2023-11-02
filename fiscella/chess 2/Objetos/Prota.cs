@@ -15,13 +15,16 @@ namespace chess_2.Objetos
     {
         private const float SPEED = 550f;
         private const float RUNNING = 1.5f;
-        private const float DASH = 6f;
+        private const float DASH = 3.5f;
         private const float GRAVITY = 5000f;
         private const float JUMP = 1500f;
         private Vector2 _velocidad;
         private bool _OnGround = true;
-        private bool _Dash = true;
+        private bool _DashRecharged = true;
+        private bool _isDashing = false;
         private string _facing = "der";
+        private float _elapsedDash = 0;
+        private float _dashTime = 0;
 
         public Prota(Texture2D texture, Vector2 position) : base(texture, position) { 
             
@@ -30,10 +33,10 @@ namespace chess_2.Objetos
         private void Dash(KeyboardState teclao) {
             if (teclao.IsKeyDown(Keys.C))
             {
-                if (DashPosible() && _Dash) {
-                    _velocidad.Y = 0;
-                    _velocidad.X = (_facing == "der" ? SPEED : -SPEED) * DASH;                    
-                    _Dash = false;
+                if (DashPosible() && _DashRecharged && !_isDashing) {
+                    _DashRecharged = false;
+                    _isDashing = true;  
+                    Dash();
                 }
             }
         }
@@ -75,6 +78,15 @@ namespace chess_2.Objetos
             }
 
             Dash(teclao);
+            if (_isDashing)
+            {
+                Dash();
+                if (_dashTime >= 2000)
+                {
+                    _isDashing = false;
+                    _dashTime = 0;
+                }
+            }
             Jump(teclao);     
         }
 
@@ -82,6 +94,8 @@ namespace chess_2.Objetos
             Rectangle rectangle;
             _OnGround = false;
             var newPos = Position + (_velocidad * Globals.Time);
+            _elapsedDash += Globals.TimeMiliseconds;
+            _dashTime += _isDashing ? _dashTime + Globals.TimeMiliseconds : 0;
 
             foreach (Rectangle SceneRectangle in Globals.SceneRectangles) 
             {
@@ -119,7 +133,12 @@ namespace chess_2.Objetos
                 }
             }
 
-            Position = newPos;
+            Position = newPos;          
+
+            if (_elapsedDash >= 1000) { 
+                _DashRecharged = true;
+                _elapsedDash = 0;
+            }
         }
 
         private bool DashPosible()
@@ -169,9 +188,11 @@ namespace chess_2.Objetos
             return posible;
         }
 
-        //public Vector2 CalculateDash() { 
-        //    return new Vector2((Position + _facing == "der" ? SPEED : -SPEED) * DASH);
-        //}
+        public void Dash() {
+            _velocidad.Y = 0;
+            _velocidad.X = (_facing == "der" ? SPEED : -SPEED) * DASH;
+            _DashRecharged = false;
+        }
 
         public void Update() {
             UpdateVelocity();

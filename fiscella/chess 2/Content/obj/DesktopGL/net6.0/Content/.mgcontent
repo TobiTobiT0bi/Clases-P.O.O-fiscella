@@ -4,38 +4,38 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/background_music.mp3</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Bishop.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_King.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Knight.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Pawn.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Queen.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Rook.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Bishop.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_King.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Knight.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Pawn.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Queen.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Rook.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/manzana.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochita.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochitaicono.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/prueba.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/chessboard.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/grass tileset.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/montañaFondo.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/montañas.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/piso y cosas.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/PisoMadera.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/PisoPiedra.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaChica.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaChicaGrass.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaGrande.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaLargaGrass.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformas.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/panqueque.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/parque.png</File>
-    <File>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/texto/ganaste.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/background_music.mp3</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Bishop.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_King.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Knight.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Pawn.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Queen.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Rook.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Bishop.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_King.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Knight.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Pawn.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Queen.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/W_Rook.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/manzana.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochita.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/pochitaicono.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/prueba.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/chessboard.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/grass tileset.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/montañaFondo.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/montañas.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/piso y cosas.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/PisoMadera.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/PisoPiedra.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaChica.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaChicaGrass.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaGrande.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformaLargaGrass.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/elementos/plataformas.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/panqueque.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/parque.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/texto/ganaste.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
