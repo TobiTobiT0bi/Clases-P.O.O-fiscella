@@ -270,3 +270,7 @@ C:\Users\Alumno\Documents\GitHub\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debu
 C:\Users\Alumno\Documents\GitHub\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.pdb
 C:\Users\Alumno\Documents\GitHub\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\chess 2.genruntimeconfig.cache
 C:\Users\Alumno\Documents\GitHub\Clases-P.O.O-fiscella\fiscella\chess 2\obj\Debug\net6.0\ref\chess 2.dll
+C:\Users\Alumno\Documents\GitHub\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\assets\epicSlash.xnb
+C:\Users\Alumno\Documents\GitHub\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\assets\slash.xnb
+C:\Users\Alumno\Documents\GitHub\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\assets\attackLeft.xnb
+C:\Users\Alumno\Documents\GitHub\Clases-P.O.O-fiscella\fiscella\chess 2\bin\Debug\net6.0\Content\img\assets\attackRight.xnb

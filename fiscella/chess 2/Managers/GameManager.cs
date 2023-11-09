@@ -37,9 +37,9 @@ namespace chess_2.Managers
 
             _Wallpapermanager.Draw();
             _SceneManager.BackgroundDraw();
-
-            _protagonista.Draw();
+           
             _SceneManager.Draw();
+            _protagonista.Draw();
             if (Globals.Debug) {
                 Debug();
             }

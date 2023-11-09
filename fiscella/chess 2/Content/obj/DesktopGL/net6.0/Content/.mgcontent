@@ -5,6 +5,10 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/background_music.mp3</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/assets/attackLeft.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/assets/attackRight.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/assets/epicSlash.png</File>
+    <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/assets/slash.png</File>
     <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Bishop.png</File>
     <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_King.png</File>
     <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Chess/B_Knight.png</File>
@@ -38,6 +42,10 @@
     <File>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/texto/ganaste.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

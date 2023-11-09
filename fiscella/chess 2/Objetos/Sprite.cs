@@ -13,7 +13,8 @@ namespace chess_2.Objetos
         public Texture2D Texture { get; }
         public Vector2 Position;
 
-        public Sprite(Vector2 position) { 
+        public Sprite(Vector2 position)
+        {
             Position = position;
         }
 
@@ -23,7 +24,7 @@ namespace chess_2.Objetos
             Position = position;
         }
 
-        public void Draw()
+        public virtual void Draw()
         {
             Globals.SpriteBatch.Draw(Texture, Position, Color.White);
         }

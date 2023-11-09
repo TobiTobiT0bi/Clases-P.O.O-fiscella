@@ -15,7 +15,7 @@ namespace chess_2.Managers
         public static bool hasClicked { get; private set; }
         public static Vector2 mousePosition { get; private set; }
 
-        public void Update() { 
+        static public void Update() { 
             var MouseState = Mouse.GetState();
 
             hasClicked = MouseState.LeftButton == ButtonState.Pressed && _LastMouseState.LeftButton == ButtonState.Released;

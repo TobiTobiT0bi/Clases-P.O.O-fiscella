@@ -19,38 +19,80 @@ namespace chess_2.Objetos
         private const float GRAVITY = 5000f;
         private const float JUMP = 1500f;
         private Vector2 _velocidad;
+
         private bool _OnGround = true;
         private bool _DashRecharged = true;
         private bool _isDashing = false;
+        private bool _attackRecharged = true;
+        private bool _isSlashing = false;
+        private bool _isAttacking = false;
+
+        private bool _slash = false;
+        private bool _lightAttack = false;
+
         private string _facing = "der";
         private float _elapsedDash = 0;
+        private float _elapsedSlash = 0;
+        private float _elapsedAttack = 0;
         private float _dashTime = 0;
+        private float _slashTime = 0;
+        private float _attackTime = 0;
+
+        private Sprite slash = new(Globals.Content.Load<Texture2D>("img/assets/slash"), new(0,0));
+        private Sprite attackRight = new(Globals.Content.Load<Texture2D>("img/assets/attackRight"), new(0, 0));
+        private Sprite attackLeft = new(Globals.Content.Load<Texture2D>("img/assets/attackLeft"), new(0, 0));
+        private Vector2 SpriteOrigin;
+
+        private Rectangle slashRect;
+        private Rectangle attackRect;
 
         public Prota(Texture2D texture, Vector2 position) : base(texture, position) { 
             
         }
 
         private void Dash(KeyboardState teclao) {
-            if (teclao.IsKeyDown(Keys.C))
+            if (teclao.IsKeyDown(Keys.LeftControl))
             {
                 if (DashPosible() && _DashRecharged && !_isDashing) {
                     _DashRecharged = false;
                     _isDashing = true;  
-                    Dash();
+                    DashExe();
                 }
             }
         }
 
         private void Jump(KeyboardState teclao) {
-            if (teclao.IsKeyDown(Keys.Space) && _OnGround)
+            if ((teclao.IsKeyDown(Keys.Space) || teclao.IsKeyDown(Keys.Up))&& _OnGround)
             {
                 _velocidad.Y = -JUMP;
                 _OnGround = false;
             }
         }
 
+        private void AttackSlash(KeyboardState teclao) {
+            if (teclao.IsKeyDown(Keys.X) && _attackRecharged && !_isSlashing) {
+                slash.Position = _facing == "der" ? new(Position.X + Texture.Width, Position.Y + Texture.Height / 2 - slash.Texture.Height / 2) : new(Position.X - slash.Texture.Width, Position.Y + Texture.Height / 2 - slash.Texture.Height / 2);
+                _isSlashing = true;
+                _slash = true;
+            }
+        }
+
+        private void AttackLight(KeyboardState teclao) {
+            if (teclao.IsKeyDown(Keys.C) && _attackRecharged && !_isAttacking) {
+                if (_facing == "der") {
+                    attackRight.Position = new(Position.X + Texture.Width, Position.Y + Texture.Height / 2 - attackRight.Texture.Height / 2);
+                }
+                else {
+                    attackLeft.Position = new(Position.X - attackLeft.Texture.Width, Position.Y + Texture.Height / 2 - attackLeft.Texture.Height / 2);
+                }              
+                _isAttacking = true;
+                _lightAttack = true;
+            }
+        }
+
         private void UpdateVelocity() { 
-            var teclao = Keyboard.GetState();        
+            var teclao = Keyboard.GetState();
+            
 
             if (teclao.IsKeyDown(Keys.Left))
             {
@@ -78,24 +120,90 @@ namespace chess_2.Objetos
             }
 
             Dash(teclao);
+            
+            AttackSlash(teclao);
+            AttackLight(teclao);
+            
+            Jump(teclao);     
+        }
+
+        private void UpdateActions() {
+            _dashTime += _isDashing ? _dashTime + Globals.TimeMiliseconds : 0;
+            _slashTime += _isSlashing ? _slashTime + Globals.Time : 0;
+            _attackTime += _isAttacking ? _attackTime + Globals.Time : 0;
+            _elapsedDash += Globals.TimeMiliseconds;
+            _elapsedSlash += Globals.TimeMiliseconds;
+            _elapsedAttack += Globals.TimeMiliseconds;
+
             if (_isDashing)
             {
-                Dash();
+                DashExe();
                 if (_dashTime >= 2000)
                 {
                     _isDashing = false;
                     _dashTime = 0;
                 }
             }
-            Jump(teclao);     
+
+            if (_elapsedDash >= 1000)
+            {
+                _DashRecharged = true;
+                _elapsedDash = 0;
+            }
+
+            if (_isSlashing)
+            {
+                _attackRecharged = false;
+                Stop();
+                if (_slashTime >= 5000)
+                {
+                    _isSlashing = false;
+
+                    _slash = false;
+
+                    _slashTime = 0;
+                }
+            }
+
+            if (_elapsedSlash >= 1000)
+            {
+                _attackRecharged = true;
+                _elapsedSlash = 0;
+            }
+
+            if (_isAttacking)
+            {
+                _attackRecharged = false;
+                if (_facing == "der")
+                {
+                    attackRight.Position = new(Position.X + Texture.Width, Position.Y + Texture.Height / 2 - attackRight.Texture.Height / 2);
+                }
+                else
+                {
+                    attackLeft.Position = new(Position.X - attackLeft.Texture.Width, Position.Y + Texture.Height / 2 - attackLeft.Texture.Height / 2);
+                }
+
+                if (_attackTime >= 500)
+                {
+                    _isAttacking = false;
+
+                    _lightAttack = false;
+
+                    _attackTime = 0;
+                }
+            }
+
+            if (_elapsedAttack >= 500)
+            {
+                _attackRecharged = true;
+                _elapsedAttack = 0;
+            }
         }
 
         private void UpdatePosition() { 
             Rectangle rectangle;
             _OnGround = false;
             var newPos = Position + (_velocidad * Globals.Time);
-            _elapsedDash += Globals.TimeMiliseconds;
-            _dashTime += _isDashing ? _dashTime + Globals.TimeMiliseconds : 0;
 
             foreach (Rectangle SceneRectangle in Globals.SceneRectangles) 
             {
@@ -134,11 +242,6 @@ namespace chess_2.Objetos
             }
 
             Position = newPos;          
-
-            if (_elapsedDash >= 1000) { 
-                _DashRecharged = true;
-                _elapsedDash = 0;
-            }
         }
 
         private bool DashPosible()
@@ -188,15 +291,34 @@ namespace chess_2.Objetos
             return posible;
         }
 
-        public void Dash() {
-            _velocidad.Y = 0;
-            _velocidad.X = (_facing == "der" ? SPEED : -SPEED) * DASH;
+        public void DashExe() {
+            Stop((_facing == "der" ? SPEED : -SPEED) * DASH);
             _DashRecharged = false;
+        }
+
+        public void Stop(float x = 0, float y = 0) {
+            _velocidad.X = x;
+            _velocidad.Y = y;
         }
 
         public void Update() {
             UpdateVelocity();
-            UpdatePosition();
+            UpdateActions();
+            UpdatePosition();        
+        }
+
+        public override void Draw()
+        {          
+            base.Draw();
+            if (_isSlashing && _slash) { Globals.SpriteBatch.Draw(slash.Texture, slash.Position, Color.White); }
+            if (_isAttacking && _lightAttack) {
+                if (_facing == "der") {
+                    Globals.SpriteBatch.Draw(attackRight.Texture, attackRight.Position, Color.White);
+                }
+                else {
+                    Globals.SpriteBatch.Draw(attackLeft.Texture, attackLeft.Position, Color.White);
+                }                
+            }
         }
     }
 }
