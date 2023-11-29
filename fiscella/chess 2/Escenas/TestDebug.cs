@@ -17,10 +17,11 @@ namespace chess_2.Escenas
         public new string fondo = "panqueque";
 
         public TestDebug() : base() {
-            _piso = new(Globals.Content.Load<Texture2D>("img/scenes/elementos/PisoPiedra"), new(0, Globals.WindowSize.Y - Globals.Content.Load<Texture2D>("img/scenes/elementos/PisoMadera").Height));
+            _piso = new(Globals.Content.Load<Texture2D>("img/scenes/elementos/PisoPiedra"), new(0, Globals.WindowSize.Y - Globals.Content.Load<Texture2D>("img/scenes/elementos/PisoPiedra").Height));
             _paredDerecha = new(new Texture2D(Globals.GraphicsDevice, 15, Globals.WindowSize.Y), new(Globals.WindowSize.X, 0));
             _paredIzquierda = new(new Texture2D(Globals.GraphicsDevice, 15, Globals.WindowSize.Y), new(-15, 0));
-            Globals.SceneRectangles = GetRectangles();
+            //Globals.SceneRectangles = GetRectangles();
+
             LoadFondo();
         }
 

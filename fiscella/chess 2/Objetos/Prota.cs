@@ -11,21 +11,27 @@ using chess_2.Managers;
 
 namespace chess_2.Objetos
 {
-    internal class Prota : Sprite
+    public class Prota : Sprite
     {
-        private const float SPEED = 550f;
+        private const float SPEED = 250f;
         private const float RUNNING = 1.5f;
         private const float DASH = 3.5f;
         private const float GRAVITY = 5000f;
-        private const float JUMP = 1500f;
+        private const float JUMP = 850f;
+        private const int OFFSET = 4;
         private Vector2 _velocidad;
+        private Vector2 _minPos, _maxPos;
+        public int HP = 3;
+        public bool vivo = true;
 
         private bool _OnGround = true;
         private bool _DashRecharged = true;
         private bool _isDashing = false;
         private bool _attackRecharged = true;
-        private bool _isSlashing = false;
-        private bool _isAttacking = false;
+        public bool _isSlashing = false;
+        public bool _isAttacking = false;
+        public bool _isBeingHurt = false;
+        public bool _hurtRecharged = true;
 
         private bool _slash = false;
         private bool _lightAttack = false;
@@ -34,20 +40,21 @@ namespace chess_2.Objetos
         private float _elapsedDash = 0;
         private float _elapsedSlash = 0;
         private float _elapsedAttack = 0;
+        private float _elapsedHurt = 0;
         private float _dashTime = 0;
         private float _slashTime = 0;
         private float _attackTime = 0;
+        private float _hurtTime = 0;
 
         private Sprite slash = new(Globals.Content.Load<Texture2D>("img/assets/slash"), new(0,0));
         private Sprite attackRight = new(Globals.Content.Load<Texture2D>("img/assets/attackRight"), new(0, 0));
         private Sprite attackLeft = new(Globals.Content.Load<Texture2D>("img/assets/attackLeft"), new(0, 0));
-        private Vector2 SpriteOrigin;
 
         private Rectangle slashRect;
         private Rectangle attackRect;
 
-        public Prota(Texture2D texture, Vector2 position) : base(texture, position) { 
-            
+        public Prota(Texture2D texture, Vector2 position) : base(texture, position) {
+            Globals.prota = this;
         }
 
         private void Dash(KeyboardState teclao) {
@@ -74,6 +81,12 @@ namespace chess_2.Objetos
                 slash.Position = _facing == "der" ? new(Position.X + Texture.Width, Position.Y + Texture.Height / 2 - slash.Texture.Height / 2) : new(Position.X - slash.Texture.Width, Position.Y + Texture.Height / 2 - slash.Texture.Height / 2);
                 _isSlashing = true;
                 _slash = true;
+                slashRect = new((int)slash.Position.X, (int)slash.Position.Y, slash.Texture.Width, slash.Texture.Height);
+                for(int i = 0; i < Globals.enemyRectangles.Count; i++) {
+                    if (slashRect.Intersects(Globals.enemyRectangles[i])) { 
+                        Globals.enemyRectangles[i] = new(0, 0, 0, 0);
+                    }
+                }
             }
         }
 
@@ -81,14 +94,29 @@ namespace chess_2.Objetos
             if (teclao.IsKeyDown(Keys.C) && _attackRecharged && !_isAttacking) {
                 if (_facing == "der") {
                     attackRight.Position = new(Position.X + Texture.Width, Position.Y + Texture.Height / 2 - attackRight.Texture.Height / 2);
+                    attackRect = new((int)attackRight.Position.X, (int)attackRight.Position.Y, attackRight.Texture.Width, attackRight.Texture.Height);
                 }
                 else {
                     attackLeft.Position = new(Position.X - attackLeft.Texture.Width, Position.Y + Texture.Height / 2 - attackLeft.Texture.Height / 2);
+                    attackRect = new((int)attackLeft.Position.X, (int)attackLeft.Position.Y, attackLeft.Texture.Width, attackLeft.Texture.Height);
                 }              
                 _isAttacking = true;
                 _lightAttack = true;
+                for (int i = 0; i < Globals.enemyRectangles.Count; i++)
+                {
+                    if (attackRect.Intersects(Globals.enemyRectangles[i]))
+                    {
+                        Globals.enemyRectangles[i] = new(0, 0, 0, 0);
+                    }
+                }
+
             }
         }
+
+        private Rectangle CalculateBounds(Vector2 pos) {
+            return new((int)pos.X + OFFSET, (int)pos.Y, Texture.Width - (2 * OFFSET), Texture.Height);
+        }
+
 
         private void UpdateVelocity() { 
             var teclao = Keyboard.GetState();
@@ -134,6 +162,8 @@ namespace chess_2.Objetos
             _elapsedDash += Globals.TimeMiliseconds;
             _elapsedSlash += Globals.TimeMiliseconds;
             _elapsedAttack += Globals.TimeMiliseconds;
+          
+            _hurtTime += _isBeingHurt ? _hurtTime + Globals.TimeMiliseconds : 0; _elapsedHurt += Globals.TimeMiliseconds;
 
             if (_isDashing)
             {
@@ -162,6 +192,8 @@ namespace chess_2.Objetos
                     _slash = false;
 
                     _slashTime = 0;
+
+                    slashRect = default(Rectangle);
                 }
             }
 
@@ -190,6 +222,8 @@ namespace chess_2.Objetos
                     _lightAttack = false;
 
                     _attackTime = 0;
+
+                    attackRect = default(Rectangle);
                 }
             }
 
@@ -198,25 +232,46 @@ namespace chess_2.Objetos
                 _attackRecharged = true;
                 _elapsedAttack = 0;
             }
+
+            if (_isBeingHurt)
+            {
+                _hurtRecharged = false;
+                if (_hurtTime >= 5000)
+                {
+                    _isBeingHurt = false;
+
+                    _hurtTime = 0;
+
+                    slashRect = default(Rectangle);
+                }
+            }
+
+            if (_elapsedHurt >= 1000)
+            {
+                _hurtRecharged = true;
+                _elapsedHurt = 0;
+            }
         }
 
-        private void UpdatePosition() { 
+        private void UpdatePosition() {
             Rectangle rectangle;
             _OnGround = false;
             var newPos = Position + (_velocidad * Globals.Time);
 
-            foreach (Rectangle SceneRectangle in Globals.SceneRectangles) 
+            foreach (Rectangle SceneRectangle in Globals.SceneRectangles)
             {
                 if (newPos.X != Position.X)
                 {
                     rectangle = new Rectangle((int)newPos.X, (int)Position.Y, Texture.Width, Texture.Height);
-                    if (rectangle.Intersects(SceneRectangle)) 
+                    if (rectangle.Intersects(SceneRectangle))
                     {
-                        if (newPos.X > Position.X) {
+                        if (newPos.X > Position.X)
+                        {
                             newPos.X = SceneRectangle.Left - Texture.Width;
                             _velocidad.X = 0;
                         }
-                        else {
+                        else
+                        {
                             newPos.X = SceneRectangle.Right;
                             _velocidad.X = 0;
                         }
@@ -226,7 +281,7 @@ namespace chess_2.Objetos
                 }
 
                 rectangle = new((int)Position.X, (int)newPos.Y, Texture.Width, Texture.Height);
-                if (rectangle.Intersects(SceneRectangle)) 
+                if (rectangle.Intersects(SceneRectangle))
                 {
                     if (_velocidad.Y > 0)
                     {
@@ -234,14 +289,30 @@ namespace chess_2.Objetos
                         _OnGround = true;
                         _velocidad.Y = 0;
                     }
-                    else {
+                    else if (Position.Y > SceneRectangle.Bottom)
+                    {
                         newPos.Y = SceneRectangle.Bottom;
                         _velocidad.Y = 0;
                     }
                 }
             }
 
-            Position = newPos;          
+            Position = newPos;
+            Position.X = MathHelper.Clamp(Position.X, 0, Globals.MapSize.X);
+        }
+
+        public void UpdateVida()
+        {
+            Rectangle rec = new((int)Position.X, (int)Position.Y, Texture.Width, Texture.Height);
+
+            foreach (var enemyRec in Globals.enemyRectangles) { 
+                if (rec.Intersects(enemyRec) &&_hurtRecharged && !_isBeingHurt) {
+                    HP--;
+                    _isBeingHurt = true;
+                }
+            }
+
+            if (HP <= 0) vivo = false; 
         }
 
         private bool DashPosible()
@@ -301,24 +372,41 @@ namespace chess_2.Objetos
             _velocidad.Y = y;
         }
 
+        public void setBounds() {
+            _minPos = new((-Globals.TileSize.X / 2) + Texture.Width / 2, (-Globals.TileSize.Y / 2) + Texture.Height / 2);
+            _maxPos = new(Globals.MapSize.X - (Globals.TileSize.X / 2) + Texture.Width / 2, Globals.MapSize.Y - (Globals.TileSize.Y / 2) + Texture.Height / 2);
+        }
+
         public void Update() {
-            UpdateVelocity();
-            UpdateActions();
-            UpdatePosition();        
+            if (vivo)
+            {
+                UpdateVelocity();
+                UpdateActions();
+                UpdatePosition();
+                UpdateVida();
+            }
+            else { 
+                Globals.protaVivo = false;
+            }
         }
 
         public override void Draw()
-        {          
-            base.Draw();
-            if (_isSlashing && _slash) { Globals.SpriteBatch.Draw(slash.Texture, slash.Position, Color.White); }
-            if (_isAttacking && _lightAttack) {
-                if (_facing == "der") {
-                    Globals.SpriteBatch.Draw(attackRight.Texture, attackRight.Position, Color.White);
+        {
+            if (vivo) {
+                base.Draw();
+                if (_isSlashing && _slash) { Globals.SpriteBatch.Draw(slash.Texture, slash.Position, Color.White); }
+                if (_isAttacking && _lightAttack)
+                {
+                    if (_facing == "der")
+                    {
+                        Globals.SpriteBatch.Draw(attackRight.Texture, attackRight.Position, Color.White);
+                    }
+                    else
+                    {
+                        Globals.SpriteBatch.Draw(attackLeft.Texture, attackLeft.Position, Color.White);
+                    }
                 }
-                else {
-                    Globals.SpriteBatch.Draw(attackLeft.Texture, attackLeft.Position, Color.White);
-                }                
-            }
+            }          
         }
     }
 }

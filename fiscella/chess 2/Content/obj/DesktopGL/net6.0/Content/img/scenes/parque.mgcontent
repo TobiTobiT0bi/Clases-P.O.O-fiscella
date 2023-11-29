@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/parque.png</SourceFile>
-  <SourceTime>2023-11-02T13:50:08.7499641-03:00</SourceTime>
-  <DestFile>C:/Users/Alumno/Documents/GitHub/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/Content/img/scenes/parque.xnb</DestFile>
-  <DestTime>2023-11-02T14:16:29.813505-03:00</DestTime>
+  <SourceFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/scenes/parque.png</SourceFile>
+  <SourceTime>2023-10-30T11:29:29.4597832-03:00</SourceTime>
+  <DestFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/Content/img/scenes/parque.xnb</DestFile>
+  <DestTime>2023-11-26T19:58:38.4068169-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

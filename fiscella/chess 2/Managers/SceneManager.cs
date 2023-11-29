@@ -10,20 +10,24 @@ namespace chess_2.Managers
 {
     internal class SceneManager
     {
-        Scene escena;
+        public TileMap escena;
 
         public SceneManager() { }
 
-        public void LoadScene(Scene escenaNueva) {
+        public void LoadScene(TileMap escenaNueva) {
             escena = escenaNueva;
+        }
+
+        public void Update() {
+            escena.Update();
+        }
+
+        public TileMap GetEscena() {
+            return escena;
         }
 
         public void Draw() { 
             escena.Draw();
-        }
-
-        public void BackgroundDraw() { 
-            escena.BackgroundDraw();
         }
     }
 }

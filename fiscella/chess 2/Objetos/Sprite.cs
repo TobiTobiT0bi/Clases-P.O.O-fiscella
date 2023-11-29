@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace chess_2.Objetos
 {
-    internal class Sprite
+    public class Sprite
     {
-        public Texture2D Texture { get; }
+        public Texture2D Texture;
         public Vector2 Position;
 
         public Sprite(Vector2 position)

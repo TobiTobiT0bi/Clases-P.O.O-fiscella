@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Documents\\GitHub\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj": {}
+    "E:\\repos\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Documents\\GitHub\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj": {
+    "E:\\repos\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Documents\\GitHub\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj",
+        "projectUniqueName": "E:\\repos\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj",
         "projectName": "chess 2",
-        "projectPath": "C:\\Users\\Alumno\\Documents\\GitHub\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj",
-        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Documents\\GitHub\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\obj\\",
+        "projectPath": "E:\\repos\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\chess 2.csproj",
+        "packagesPath": "E:\\repos\\.nuget\\packages",
+        "outputPath": "E:\\repos\\Clases-P.O.O-fiscella\\fiscella\\chess 2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "E:\\repos\\Clases-P.O.O-fiscella\\NuGet.Config",
+          "E:\\Users\\tobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +27,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/lithiumtoast/api/v3/index.json": {},
+          "https://www.myget.org/F/lithiumtoast/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -40,13 +48,37 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MonoGame.Aseprite": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
             "MonoGame.Content.Builder.Task": {
+              "target": "Package",
+              "version": "[3.8.1.303, )"
+            },
+            "MonoGame.Extended": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MonoGame.Extended.Content.Pipeline": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MonoGame.Extended.Tiled": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MonoGame.Framework.Content.Pipeline": {
               "target": "Package",
               "version": "[3.8.1.303, )"
             },
             "MonoGame.Framework.DesktopGL": {
               "target": "Package",
               "version": "[3.8.1.303, )"
+            },
+            "TiledSharp": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
@@ -60,12 +92,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.19, 6.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.19, 6.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.19, 6.0.19]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.19, 6.0.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     }

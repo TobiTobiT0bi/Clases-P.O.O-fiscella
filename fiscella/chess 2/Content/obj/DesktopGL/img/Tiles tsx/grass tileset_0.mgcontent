@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Tiles tsx/grass tileset.tsx</SourceFile>
+  <SourceTime>2023-11-26T17:27:41.0725925-03:00</SourceTime>
+  <DestFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/img/Tiles tsx/grass tileset_0.xnb</DestFile>
+  <DestTime>2023-11-27T04:34:19.1752158-03:00</DestTime>
+  <Importer>TiledMapTilesetImporter</Importer>
+  <ImporterTime>2023-03-19T08:04:28-03:00</ImporterTime>
+  <Processor>TiledMapTilesetProcessor</Processor>
+  <ProcessorTime>2023-03-19T08:04:28-03:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset>
+    <string>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/img/scenes/elementos/grass tileset_0.xnb</string>
+  </BuildAsset>
+  <BuildOutput />
+</PipelineBuildEvent>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/Fonts/Arial16.spritefont</SourceFile>
+  <SourceTime>2015-03-08T14:26:06-03:00</SourceTime>
+  <DestFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/Fonts/Arial16.xnb</DestFile>
+  <DestTime>2023-11-28T23:05:58.4771694-03:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2022-07-26T08:44:56-03:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

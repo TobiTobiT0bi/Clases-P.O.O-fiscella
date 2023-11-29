@@ -7,6 +7,7 @@ using System;
 using chess_2.Managers;
 using chess_2.Objetos;
 using chess_2.Escenas;
+using TiledSharp;
 
 namespace chess_2
 {
@@ -26,12 +27,15 @@ namespace chess_2
         {
             Globals.WindowSize = new(800, 600);
             Globals.Debug = false;
+            Globals.debugConsole = "";
             _graphics.PreferredBackBufferWidth = Globals.WindowSize.X;
             _graphics.PreferredBackBufferHeight = Globals.WindowSize.Y;
             _graphics.ApplyChanges();
 
+            Globals.Viewport = GraphicsDevice.Viewport;
             Globals.viewMatrix = new Matrix();
-            Globals.SceneRectangles = new();
+            Globals.SceneRectangles = new Rectangle[1616 / 16, 800 / 16];
+            Globals.enemyRectangles = new List<Rectangle>();
             Globals.Content = Content;
             base.Initialize();
         }
@@ -42,7 +46,7 @@ namespace chess_2
             Globals.GraphicsDevice = GraphicsDevice;
 
             _gameManager = new GameManager();
-            _gameManager._SceneManager.LoadScene(new Parque());
+            _gameManager._SceneManager.LoadScene(new TMParque());
         }
 
         protected override void Update(GameTime gameTime)
@@ -52,9 +56,8 @@ namespace chess_2
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape)) {
                 Exit();
             }
-
-            
             Globals.Update(gameTime);
+
             _gameManager.Update();
 
             base.Update(gameTime);
@@ -63,9 +66,11 @@ namespace chess_2
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-          
+            Globals.SpriteBatch.Begin(transformMatrix: Globals.viewMatrix);
+
             _gameManager.Draw();
 
+            Globals.SpriteBatch.End();
             base.Draw(gameTime);
         }
     }

@@ -10,6 +10,8 @@
 
 #-------------------------------- References --------------------------------#
 
+/reference:C:\Users\tobi\.nuget\packages\monogame.aseprite\5.0.0\content\Monogame.Aseprite.Content.Pipeline.dll
+/reference:C:\Users\tobi\.nuget\packages\monogame.aseprite\5.0.0\lib\net6.0\MonoGame.Aseprite.dll
 
 #---------------------------------- Content ---------------------------------#
 
@@ -18,6 +20,13 @@
 /processor:SongProcessor
 /processorParam:Quality=Best
 /build:background_music.mp3
+
+#begin Fonts/Arial16.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/Arial16.spritefont
 
 #begin img/assets/attackLeft.png
 /importer:TextureImporter
@@ -54,30 +63,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:img/assets/epicSlash.png
-
-#begin img/assets/epicSlash.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:img/assets/epicSlash.png
-
-#begin img/assets/slash.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:img/assets/slash.png
 
 #begin img/assets/slash.png
 /importer:TextureImporter
@@ -235,6 +220,78 @@
 /processorParam:TextureFormat=Color
 /build:img/Chess/W_Rook.png
 
+#begin img/Damas/checkers Wood_v.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/Damas/checkers Wood_v.png
+
+#begin img/Damas/checkers_topDown Wood_v.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/Damas/checkers_topDown Wood_v.png
+
+#begin img/Damas/checkers_topDown.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/Damas/checkers_topDown.png
+
+#begin img/Damas/checkers.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/Damas/checkers.png
+
+#begin img/Damas/cursor.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/Damas/cursor.png
+
+#begin img/Damas/piezaSing.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:img/Damas/piezaSing.png
+
 #begin img/manzana.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -246,6 +303,14 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:img/manzana.png
+
+#begin img/Mapas_tsx/Nivel1.aseprite
+/importer:AsepriteFileContentImporter
+/processor:TilemapContentProcessor
+/processorParam:FrameIndex=0
+/processorParam:OnlyVisibleLayer=True
+/processorParam:GenerateMipmaps=False
+/build:img/Mapas_tsx/Nivel1.aseprite
 
 #begin img/pochita.png
 /importer:TextureImporter

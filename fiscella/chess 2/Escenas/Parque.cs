@@ -32,7 +32,7 @@ namespace chess_2.Escenas
             _plataformaIzquierda = new(Globals.Content.Load<Texture2D>("img/scenes/elementos/plataformaLargaGrass"), new(_chessboard.Position.X, (Globals.WindowSize.Y / 2) + 15));
             _plataformaMedia = new(Globals.Content.Load<Texture2D>("img/scenes/elementos/plataformaChicaGrass"), new(Globals.WindowSize.X / 2 - Globals.Content.Load<Texture2D>("img/scenes/elementos/plataformaChicaGrass").Width / 2, 150));
 
-            Globals.SceneRectangles = GetRectangles();
+            //Globals.SceneRectangles = GetRectangles();
             LoadFondo();
         }
 

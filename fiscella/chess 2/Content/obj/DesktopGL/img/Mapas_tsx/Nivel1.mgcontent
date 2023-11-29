@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/img/Mapas_tsx/Nivel1.aseprite</SourceFile>
+  <SourceTime>2023-11-28T18:28:39.7276989-03:00</SourceTime>
+  <DestFile>E:/repos/Clases-P.O.O-fiscella/fiscella/chess 2/Content/bin/DesktopGL/img/Mapas_tsx/Nivel1.xnb</DestFile>
+  <DestTime>2023-11-28T23:05:58.5781928-03:00</DestTime>
+  <Importer>AsepriteFileContentImporter</Importer>
+  <ImporterTime>2023-03-06T21:06:28-03:00</ImporterTime>
+  <Processor>TilemapContentProcessor</Processor>
+  <ProcessorTime>2023-03-06T21:06:28-03:00</ProcessorTime>
+  <Parameters>
+    <Key>FrameIndex</Key>
+    <Value>0</Value>
+  </Parameters>
+  <Parameters>
+    <Key>OnlyVisibleLayer</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>GenerateMipmaps</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
